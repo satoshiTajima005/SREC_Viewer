@@ -1,0 +1,22 @@
+{
+	"main": "index.html",
+	"name": "srec_viewer",
+	"description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
+	"version": "6.0.0",
+	"author": "FrogHand(Satoshi Tajima)",
+	"window": {
+		"title": "SREC_Viewer",
+		"width": 800,
+		"height": 600,
+		"min_width": 800,
+		"min_height": 600,
+		"icon": "css/images/SREC_Viewer_16.png",
+		"show": false,
+		"toolbar": false
+	},
+	"license": "MIT",
+	"dependencies": {
+		"iconv-lite": "^0.4.11",
+		"node-zip": "^1.1.1"
+	}
+}
