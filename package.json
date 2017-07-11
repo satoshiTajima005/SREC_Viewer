@@ -1,8 +1,8 @@
 {
   "version": "6.0.0",
-	"name": "srec_viewer",
-	"description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
-	"author": "FrogHand(Satoshi Tajima)",
+  "name": "srec_viewer",
+  "description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
+  "author": "FrogHand (Satoshi Tajima)",
   "devDependencies": {
     "nw": "^0.23.5",
     "nw-builder": "^3.4.1"
@@ -11,5 +11,7 @@
     "dev": "nw src/",
     "prod": "nwbuild --platforms win32,osx32,linux32 --buildDir dist/ src/ --flavor normal"
   },
-  "main": "index.html"
+  "main": "index.js",
+  "dependencies": {},
+  "license": "MIT"
 }
