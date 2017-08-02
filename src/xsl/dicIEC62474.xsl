@@ -72,6 +72,8 @@
 			<xsl:if test="$id='additionalStatement'">質問内容</xsl:if>
 			<xsl:if test="$id='substanceTrue'">閾値超過物質</xsl:if>
 			<xsl:if test="$id='substanceFalse'">閾値未超過物質</xsl:if>
+			<xsl:if test="$id='ContainingTrue'">含有-あり</xsl:if>
+			<xsl:if test="$id='ContainingFalse'">含有-なし</xsl:if>
 			<xsl:if test="$id='Distribute'">配布モード</xsl:if>
 			<xsl:if test="$id='Request/Reply'">依頼/返答モード</xsl:if>
 			<xsl:if test="$id='aboveThresholdLevel'">閾値超過判定</xsl:if>
@@ -162,6 +164,8 @@
 			<xsl:if test="$id='additionalStatement'">Statement</xsl:if>
 			<xsl:if test="$id='substanceTrue'">Over-threshold substance</xsl:if>
 			<xsl:if test="$id='substanceFalse'">Under-threshold substance</xsl:if>
+			<xsl:if test="$id='ContainingTrue'">Contain</xsl:if>
+			<xsl:if test="$id='ContainingFalse'">None Contain</xsl:if>
 			<xsl:if test="$id='Distribute'">Distribute</xsl:if>
 			<xsl:if test="$id='Request/Reply'">Request/Reply</xsl:if>
 			<xsl:if test="$id='aboveThresholdLevel'">Above threshold level</xsl:if>
@@ -252,6 +256,8 @@
 			<xsl:if test="$id='additionalStatement'">质问内容</xsl:if>
 			<xsl:if test="$id='substanceTrue'">超过阈值的物质</xsl:if>
 			<xsl:if test="$id='substanceFalse'">下阈值的物质</xsl:if>
+			<xsl:if test="$id='ContainingTrue'">含有</xsl:if>
+			<xsl:if test="$id='ContainingFalse'">它不包含</xsl:if>
 			<xsl:if test="$id='Distribute'">分配</xsl:if>
 			<xsl:if test="$id='Request/Reply'">申请/应答</xsl:if>
 			<xsl:if test="$id='aboveThresholdLevel'">超过阈值的决定</xsl:if>

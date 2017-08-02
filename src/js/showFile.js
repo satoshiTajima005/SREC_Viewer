@@ -1,4 +1,41 @@
 /*********************************************************************************************************************************
+    機能：ファイルパスからの表示ルート
+注意事項：無し
+*********************************************************************************************************************************/
+function showFileFromPath(p) {
+	p.toUpperCase().match(/(CSV|XML|JGP4|SHAI|SHCI)$/);
+	var ext = $.trim(RegExp.$1);
+	switch (ext) {
+		case "XML":
+			var t = fs.readFileSync(p, {
+				encoding: "utf-8"
+			});
+			callBack(ext, t, p);
+			break;
+		case "CSV":
+		case "JGP4":
+			var buf = fs.readFileSync(p);
+			var t = iconv.decode(buf, jsonOption.menu.enc);
+			callBack(ext, t, p);
+			break;
+		case "SHAI":
+		case "SHCI":
+			var f = getUnpackedZIP(p);
+			if (!f) {
+				errMsg(msg.msgIecUnpackNG);
+			} else {
+				for (var i = 0; i < f.length; i++) {
+					callBack("XML", f[i].data, p);
+				}
+			}
+			return;
+		default:
+			errMsg('"' + p + '"\n\n' + msg.msgNotSupport);
+	}
+}
+
+
+/*********************************************************************************************************************************
     機能：表示のルート
 注意事項：無し
 *********************************************************************************************************************************/
@@ -9,12 +46,16 @@ function showFile(oFile) {
 	var ext = $.trim(RegExp.$1);
 	switch (ext) {
 		case "XML":
-			var enc = "UTF-8"; break;
+			var enc = "UTF-8";
+			break;
 		case "CSV":
-			var enc = jsonOption.menu.enc; break;
+			var enc = jsonOption.menu.enc;
+			break;
 		case "JGP4":
-			var enc = jsonOption.menu.enc; break;
-		case "SHAI": case "SHCI":
+			var enc = jsonOption.menu.enc;
+			break;
+		case "SHAI":
+		case "SHCI":
 			var f = getUnpackedZIP(oFile.path);
 			if (!f) {
 				errMsg(msg.msgIecUnpackNG);
@@ -44,23 +85,23 @@ function callBack(ext, text, p) {
 	//コンテンツタブの表示
 	$("#contents").show();
 	var id = "contents-" + tabCounter;
-	var li = $( tabTemplate.replace( /#\{href\}/g, "#" + id ).replace( /#\{label\}/g, ("Tab " + tabCounter) ) );
+	var li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, ("Tab " + tabCounter)));
 
 	var $t = $("#contents").tabs();
 	$("#fileTab").append(li);
-	$t.append( contentsTemp.replace(/\@/igm, tabCounter).replace(/\{tableView\}/, jsonTool.id.tabTitleTxtTbl).replace(/\{treeView\}/, jsonTool.id.tabTitleTxtTre) );
+	$t.append(contentsTemp.replace(/\@/igm, tabCounter).replace(/\{tableView\}/, jsonTool.id.tabTitleTxtTbl).replace(/\{treeView\}/, jsonTool.id.tabTitleTxtTre));
 	$t.tabs("refresh");
 	$t.find("div.tabContents").last().find("div.tabArea").tabs();
 	tabCounter++;
-	
-	var  $tabC = $t.find("div.tabContents").last();
+
+	var $tabC = $t.find("div.tabContents").last();
 
 	var res;
 	switch (ext) {
 		case "XML":
-			if ( text.match(/http\:\/\/std\.iec\.ch\/iec62474/) ){
+			if (text.match(/http\:\/\/std\.iec\.ch\/iec62474/)) {
 				res = showIEC(text, $tabC);
-			}else{
+			} else {
 				res = showJAMP(text, $tabC);
 			}
 			break;
@@ -118,7 +159,7 @@ function showJAMP(sXML, $tabC) {
 		default:
 			return msg.msgJampNG;
 	}
-	switch ( $.trim(status[1]) ) {
+	switch ($.trim(status[1])) {
 		case "Ver.3.0":
 		case "Ver.3.1":
 		case "Ver.4.0":
@@ -146,7 +187,7 @@ function showJAMP(sXML, $tabC) {
 
 	//読み込みファイル情報設定
 	$tabC.attr("crtFileType", status[0]);
-	$tabC.attr("crtFileVer",status[1]);
+	$tabC.attr("crtFileVer", status[1]);
 
 	return true;
 }
@@ -160,7 +201,7 @@ function showIEC(sXML, $tabC) {
 
 	//バージョン確認
 	sXML.match(/schemaDatabaseVersion="(.*?)"/);
-	if (RegExp.$1!=="X6.01ex1.0") {
+	if (RegExp.$1 !== "X6.01ex1.0") {
 		return msg.msgIECVerNG;
 	};
 
@@ -169,10 +210,10 @@ function showIEC(sXML, $tabC) {
 	sXML = sXML
 		.replace(/<Main.*?>/m, mainStr)
 		.replace(/<\/Main>/, "<toolLang>" + crtLang + "</toolLang></Main>"); //表示言語の追加
-	
+
 	//表示
-	$tabC.find(".uniqueArea").html( getTransform("xsl/IEC62474_UNIQUE.xsl", sXML) );
-	$tabC.find(".tvLeft").html( getTransform("xsl/IEC62474_TREE.xsl", sXML) );
+	$tabC.find(".uniqueArea").html(getTransform("xsl/IEC62474_UNIQUE.xsl", sXML));
+	$tabC.find(".tvLeft").html(getTransform("xsl/IEC62474_TREE.xsl", sXML));
 	setAccordion($tabC);
 	setTreeview($tabC);
 	$tabC.find("a.tabTitleTree").click();
@@ -311,7 +352,7 @@ function showJAMA(txt, $tabC) {
 	ver = ver[1].replace(/Ver|\./ig, "");
 	if (!isFinite(ver)) return msg.msgJamaCsvNG;
 	if (204 > ver || ver > 241) return msg.msgJamaVerNG;
-	
+
 	if (status != "正常終了" && status != "Successful" && status != "正常退出") {
 		if (!confirm(msg.msgJamaStatusNG.replace(/@status@/, status))) return;
 	}
@@ -373,16 +414,16 @@ function showJAMA(txt, $tabC) {
 注意事項：無し
 *********************************************************************************************************************************/
 var showJGPItem = function (eq, $tabC) {
-  //$tabC.css("display", "none");
-  $tabC.find(".tabTitleTable").click();
-  var txt = strXML[$tabC.attr("id")].replace(/<\/JGP>/, "").split("<JGP200>");
-  var tmp = "<JGP200>" + "<toolLang>" + crtLang + "</toolLang>\n" + "<ver>" + $tabC.attr("crtFileVer").substring(0, 3) + "</ver>\n";
-  txt = tmp + (txt[eq].replace(/<toolLang>.*$/, ""));
+	//$tabC.css("display", "none");
+	$tabC.find(".tabTitleTable").click();
+	var txt = strXML[$tabC.attr("id")].replace(/<\/JGP>/, "").split("<JGP200>");
+	var tmp = "<JGP200>" + "<toolLang>" + crtLang + "</toolLang>\n" + "<ver>" + $tabC.attr("crtFileVer").substring(0, 3) + "</ver>\n";
+	txt = tmp + (txt[eq].replace(/<toolLang>.*$/, ""));
 
-  $tabC.find(".ItemHeader").html(getTransform("xsl/JGP_ITEM.xsl", txt));
-  $tabC.find(".tabTable").html(getTransform("xsl/JGP_TABLE.xsl", txt));
-  $tabC.find(".tv").addClass("tree" + crtLang);
-  //$tabC.css("display", "block");
+	$tabC.find(".ItemHeader").html(getTransform("xsl/JGP_ITEM.xsl", txt));
+	$tabC.find(".tabTable").html(getTransform("xsl/JGP_TABLE.xsl", txt));
+	$tabC.find(".tv").addClass("tree" + crtLang);
+	//$tabC.css("display", "block");
 };
 
 function showJGP4(txt, $tabC) {
@@ -482,7 +523,7 @@ function showJGP4(txt, $tabC) {
 	//読み込みファイル情報設定
 	$tabC.attr("crtFileType", "JGP");
 	$tabC.attr("crtFileVer", $("#100at2").text().substring(0, 3));
-  
+
 	//初期表示
 	$tabC.find(".ItemSelector tr:eq(1)").click();
 	$tabC.find(".tabArea").tabs("disable", 1);

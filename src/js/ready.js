@@ -68,7 +68,9 @@ $(function () {
     }
     if (t0 === 0 && t1 !== 0) {
       //ｔ0が0でt1がある場合は、すべてt0に移してt0を非表示
-      $("#fileTab1 button.moveView").each(function () { $(this).click(); });
+      $("#fileTab1 button.moveView").each(function () {
+        $(this).click();
+      });
       $("#contents1").hide();
     }
     $(window).resize();
@@ -100,10 +102,12 @@ $(function () {
 
       //ビュー変更タブの修正
       switch ($tabC.attr("crtFileType")) {
-        case "MSDSplus": case "MSDSplus-temp":
+        case "MSDSplus":
+        case "MSDSplus-temp":
           $added.find(".tabArea").tabs("disable", 1);
           break;
-        case "JAMA": case "IEC62474":
+        case "JAMA":
+        case "IEC62474":
           $added.find(".tabTitleTree").click();
           $added.find(".tabArea")
             .tabs("option", "active", 1)
@@ -114,7 +118,7 @@ $(function () {
           break;
       }
       convertUnit($added.find(".uniqueArea"));
-	    convertUnit($added.find(".tabTable"));
+      convertUnit($added.find(".tabTable"));
     }
 
     //コンテンツタブの幅と表示
@@ -248,35 +252,7 @@ $(function () {
 
   //***引数ファイルの表示***
   for (var i = 0, l = arg.length; i < l; i++) {
-    arg[i].toUpperCase().match(/(CSV|XML|JGP4|SHAI|SHCI)$/);
-    var ext = $.trim(RegExp.$1);
-    switch (ext) {
-      case "XML":
-        var t = fs.readFileSync(arg[i], {
-          encoding: "utf-8"
-        });
-        break;
-      case "CSV":
-      case "JGP4":
-        var buf = fs.readFileSync(arg[i]);
-        var t = iconv.decode(buf, jsonOption.menu.enc);
-        break;
-      case "SHAI":
-      case "SHCI":
-        var f = getUnpackedZIP(arg[i]);
-        if (!f) {
-          errMsg(msg.msgIecUnpackNG);
-        } else {
-          for (var j = 0; j < f.length; j++) {
-            callBack("XML", f[j].data, arg[i]);
-          }
-        }
-        continue;
-      default:
-        errMsg('"' + arg[i] + '"\n\n' + msg.msgNotSupport);
-        continue;
-    }
-    callBack(ext, t, arg[i]);
+    showFileFromPath(arg[i]);
   }
 
   //about配下のリンク設定
@@ -284,6 +260,21 @@ $(function () {
     e.preventDefault();
     nw.Shell.openExternal($(this).attr("href"));
   });
+
+  //secound instanceの処理
+  var splitCml = function (cml) {
+    var res, reg, mat;
+    reg = /"([^"]+)"|([^ ]+)/g;
+    res = [];
+    while (mat = reg.exec(cml))
+      res[res.length] = mat[1] || mat[2];
+    return res.slice(1);
+  }
+  nw.App.on('open', function (pathData) {
+    var p = splitCml(pathData);
+    showFileFromPath(p[p.length - 1].replace(/\"/igm, ''));
+  });
+
 
 });
 
@@ -714,7 +705,7 @@ function setTreeview($tabC) {
         "</BREAK_DOWN>";
       var htm = getTransform("xsl/BreakDown.xsl", treeXML);
       $tabC.find(".tvRight").html(htm);
-      convertUnit( $tabC.find(".tvRight") );
+      convertUnit($tabC.find(".tvRight"));
     });
   });
   $tabC.find(".tv a:eq(0)").click();
