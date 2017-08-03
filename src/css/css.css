@@ -851,7 +851,7 @@ hr {
 	header {
 		display: none;
 	}
-	#contents {
+	#contents, #contents1 {
 		filter: none;
 		position: static;
 		height: auto;
@@ -860,29 +860,19 @@ hr {
 		padding: 0;
 		overflow: visible;
 	}
-	.tabs {
+	.tabContents {
+		overflow: visible;
+	}
+	.tabs, #fileTab, #fileTab2 {
 		display: none;
 	}
 	.tvLeft {
 		height: auto;
 		overflow: visible;
 	}
-	.AIS1,
-	.AIS2,
-	.AIS3,
-	.AIS4,
-	.AIS5,
-	.AIS6,
-	.AIS7,
-	#JGP1,
-	#JGP2,
-	#JGP3,
-	#JGP4 #IEC1,
-	#IEC2,
-	#IEC3,
-	#IEC4,
-	#IEC5,
-	#IEC6 {
+	.AIS1, .AIS2, .AIS3, .AIS4, .AIS5, .AIS6, .AIS7,
+	.JGP1, .JGP2, .JGP3, .JGP4,
+	.IEC1, .IEC2, .IEC3, .IEC4, .IEC5, .IEC6 {
 		page-break-inside: avoid;
 	}
 }

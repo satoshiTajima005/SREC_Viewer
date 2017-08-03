@@ -271,6 +271,7 @@ $(function () {
     return res.slice(1);
   }
   nw.App.on('open', function (pathData) {
+    nw.Window.get().focus();
     var p = splitCml(pathData);
     showFileFromPath(p[p.length - 1].replace(/\"/igm, ''));
   });
