@@ -4,12 +4,12 @@
   "description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
   "author": "FrogHand (Satoshi Tajima)",
   "devDependencies": {
-    "nw": "^0.23.5",
+    "nw": "^0.24.3",
     "nw-builder": "^3.4.1"
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win32,osx32,linux32 --buildDir dist/ src/ --flavor normal"
+    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/ --flavor normal"
   },
   "main": "index.js",
   "dependencies": {},
