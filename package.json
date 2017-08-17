@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/ --flavor normal"
+    "prod": "nwbuild -p win32,win64,osx64,linux32,linux64 -v 0.24.3 -o dist/ --flavor normal --macicns src/css/images/SREC_Viewer.icns --winico src/css/images/SREC_Viewer.ico src/"
   },
   "main": "index.js",
   "dependencies": {},
