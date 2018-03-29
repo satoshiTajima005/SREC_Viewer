@@ -65,7 +65,7 @@
 		"msgIecUnpackNG": "这个文件是不是SHCI/SCAI规范",
 		"msgIecFileNG": "这个XML文件格式不IEC62474。",
 		"msgJamaCsvNG": "这个文件是不是JAMA-CSV规范",
-		"msgJamaVerNG": "此文件的版本是不可见的范围 (可见的范围: Ver.2.04 ~ Ver.2.41)",
+		"msgJamaVerNG": "此文件的版本是不可见的范围 (可见的范围: Ver.2.04 ~ Ver.2.50)",
 		"msgJamaStatusNG": "这个文件的状态是 [@status@] \n它可能无法正确显示。\n\n你想显示这个文件吗?",
 		"msgJampNG": "这个XML文件格式不JAMP。",
 		"msgJampVerNG": "此文件的版本是不可见的范围 (可见的范围: Ver.3.0, Ver.3.1, Ver.4.0 or Ver.4.1)",

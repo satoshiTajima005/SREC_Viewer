@@ -65,7 +65,7 @@
 		"msgIecUnpackNG": "This file is not SHAI/SHCI specification.",
 		"msgIecFileNG": "This XML file is not IEC62474 format.",
 		"msgJamaCsvNG": "This file is not JAMA-CSV specification.",
-		"msgJamaVerNG": "This file is not viewable version.(viewable version: Ver.2.04 ~ Ver.2.41)",
+		"msgJamaVerNG": "This file is not viewable version.(viewable version: Ver.2.04 ~ Ver.2.50)",
 		"msgJamaStatusNG": "This file status is [@status@] \nIt may not display correctly.\n\nDo you want to show this file?",
 		"msgJampNG": "This XML file is not JAMP format.",
 		"msgJampVerNG": "This file is not viewable version.(viewable version: Ver.3.0, Ver.3.1, Ver.4.0 or Ver.4.1)",

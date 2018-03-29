@@ -65,7 +65,7 @@
 		"msgIecUnpackNG": "SHCI/SCAI仕様のファイルではないようです",
 		"msgIecFileNG": "IEC62474フォーマットのXMLではありません",
 		"msgJamaCsvNG": "JAMA仕様のCSVファイルでは無いようです。",
-		"msgJamaVerNG": "表示できる範囲外のファイルです (表示可能: Ver.2.04 ～ Ver.2.41)",
+		"msgJamaVerNG": "表示できる範囲外のファイルです (表示可能: Ver.2.04 ～ Ver.2.50)",
 		"msgJamaStatusNG": "ファイルの状態が [@status@] です。\n正常に表示されない場合がありますが、表示しますか?",
 		"msgJampNG": "JAMPフォーマットのXMLではありません。",
 		"msgJampVerNG": "表示できる範囲外のファイルです(表示可能: Ver.3.0 ～ Ver.4.1)",
