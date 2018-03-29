@@ -8,8 +8,8 @@
     "url": "https://github.com/satoshiTajima005/SREC_Viewer"
   },
   "devDependencies": {
-    "nw": "^0.24.3",
-    "nw-builder": "^3.4.1"
+    "nw": "^0.24.4",
+    "nw-builder": "^3.5.1"
   },
   "scripts": {
     "dev": "nw src/",
