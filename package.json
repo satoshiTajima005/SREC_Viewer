@@ -8,12 +8,12 @@
     "url": "https://github.com/satoshiTajima005/SREC_Viewer"
   },
   "devDependencies": {
-    "nw": "^0.24.4",
+    "nw": "^0.29.3",
     "nw-builder": "^3.5.1"
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild -p win32,win64,osx64,linux32,linux64 -v 0.24.3 -o dist/ --flavor normal --macicns src/css/images/SREC_Viewer.icns --winico src/css/images/SREC_Viewer.ico src/"
+    "prod": "nwbuild -p win32,win64,osx64,linux32,linux64 -v 0.29.3 -o dist/ --flavor normal --macicns src/css/images/SREC_Viewer.icns --winico src/css/images/SREC_Viewer.ico src/"
   },
   "main": "index.js",
   "dependencies": {},
