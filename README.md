@@ -1,6 +1,5 @@
-# SREC_Viewer
+# SREC_Viewer Ver.6.1.0
 ### 環境負荷物質報告書ビューワ (JAMP-AIS・MSDSplus/JGPSSI/JAMA/chemSHERPA/IEC62474 対応)
-### Ver.6.1.0
 
 ### これなに？
 電気/電子/自動車関連業界で環境情報伝達ファイルとして普及している
@@ -22,7 +21,17 @@
  - [公式ドキュメント](http://docs.nwjs.io/en/latest/For%20Users/Package%20and%20Distribute/)
  - [Electronよりもお手軽に！NW.jsならデザイナーでもデスクトップアプリが作れる - WPS](https://www.webprofessional.jp/cross-platform-desktop-app-nw-js/)
 
- を参考にパッケージングしてください。
+を参考にパッケージングしてください。
+具体的には、管理者権限でcmd.exeを起動し、
+
+```sh
+git clone https://github.com/satoshiTajima005/SREC_Viewer.git
+cd SREC_Viewer
+npm install
+npm run prod
+```
+
+となります。
 
 ### なんでGitHubにあげてるの？
 当初、私自身が業務上必要な為に作ったツールで、これは便利だなと思ったので公開しておりましたが、その後、環境負荷物質管理業務をメインとしない形に変わったため、できればだれか更新作業やってくれるといいなーという淡い期待を抱いています。
