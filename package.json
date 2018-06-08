@@ -1,5 +1,5 @@
 {
-  "version": "6.1.0",
+  "version": "6.1.1",
   "name": "srec_viewer",
   "description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
   "author": "FrogHand (Satoshi Tajima)",
@@ -8,12 +8,12 @@
     "url": "https://github.com/satoshiTajima005/SREC_Viewer"
   },
   "devDependencies": {
-    "nw": "^0.29.3",
-    "nw-builder": "^3.5.1"
+    "nw": "^0.30.2",
+    "nw-builder": "^3.5.3"
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild -p win32,win64,osx64,linux32,linux64 -v 0.29.3 -o dist/ --flavor normal --macicns src/css/images/SREC_Viewer.icns --winico src/css/images/SREC_Viewer.ico src/"
+    "prod": "nwbuild -p win32,win64,osx64,linux32,linux64 -v 0.30.2 -o dist/ --flavor normal --macicns src/css/images/SREC_Viewer.icns --winico src/css/images/SREC_Viewer.ico src/"
   },
   "main": "index.js",
   "dependencies": {},
