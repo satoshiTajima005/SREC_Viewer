@@ -1,4 +1,4 @@
-# SREC_Viewer Ver.6.1.0
+# SREC_Viewer Ver.6.1.1
 ### 環境負荷物質報告書ビューワ (JAMP-AIS・MSDSplus/JGPSSI/JAMA/chemSHERPA/IEC62474 対応)
 
 ### これなに？
