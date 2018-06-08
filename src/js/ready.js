@@ -266,8 +266,7 @@ $(function () {
     var res, reg, mat;
     reg = /"([^"]+)"|([^ ]+)/g;
     res = [];
-    while (mat = reg.exec(cml))
-      res[res.length] = mat[1] || mat[2];
+    while (mat = reg.exec(cml)) res[res.length] = mat[1] || mat[2];
     return res.slice(1);
   }
   nw.App.on('open', function (pathData) {
