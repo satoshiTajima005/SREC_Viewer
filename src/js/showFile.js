@@ -350,7 +350,7 @@ function showJAMA(txt, $tabC) {
 	var status = ver[3];
 	ver = ver[1].replace(/Ver|\./ig, "");
 	if (!isFinite(ver)) return msg.msgJamaCsvNG;
-	if (204 > ver || ver > 250) return msg.msgJamaVerNG;
+	if (204 > ver || ver > 251) return msg.msgJamaVerNG;
 
 	if (status != "正常終了" && status != "Successful" && status != "正常退出") {
 		if (!confirm(msg.msgJamaStatusNG.replace(/@status@/, status))) return;
