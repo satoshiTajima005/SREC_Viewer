@@ -2008,6 +2008,20 @@
 							<xsl:value-of select="//input[4]/@value" />
 						</td>
 					</tr>
+					<tr>
+						<th>
+							<xsl:call-template name="getIecHeader">
+								<xsl:with-param name="id" select="'applications'" />
+								<xsl:with-param name="lang" select="string(//toolLang)" />
+							</xsl:call-template>
+						</th>
+						<td>
+							<xsl:call-template name="getApplications">
+								<xsl:with-param name="id" select="//input[1]/@value" />
+								<xsl:with-param name="lang" select="string(//toolLang)" />
+							</xsl:call-template>
+						</td>
+					</tr>
 				</xsl:if>
 			</xsl:if>
 		</table>
