@@ -8,12 +8,12 @@
     "url": "https://github.com/satoshiTajima005/SREC_Viewer"
   },
   "devDependencies": {
-    "nw": "^0.32.1",
+    "nw": "^0.35.2",
     "nw-builder": "^3.5.4"
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --version 0.32.1 --flavor normal --buildDir dist/ src/"
+    "prod": "nwbuild --platforms win32,win64,osx64,linux64 --version 0.35.2 --flavor normal --buildDir dist/ src/"
   },
   "main": "index.js",
   "license": "MIT"
