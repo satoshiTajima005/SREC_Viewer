@@ -30,7 +30,7 @@ $(function () {
         showFile($(this)[0].files[i]);
       }
     } else {
-      if (fn === "") return;　 //ファイル名が空欄⇒キャンセル
+      if (fn === "") return; //ファイル名が空欄⇒キャンセル
       errMsg(msg.msgNotSupport);
     }
   });
