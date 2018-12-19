@@ -363,104 +363,104 @@
       <xsl:if test="$id='00004'">一部の芳香族アミンを生成するアゾ染料・顔料</xsl:if>
       <xsl:if test="$id='00005'">酸化ベリリウム</xsl:if>
       <xsl:if test="$id='00007'">ホウ酸</xsl:if>
-      <xsl:if test="$id='00008'">臭素系難燃剤(PBB類,PBDE類およびHBCDDを除く)</xsl:if>
-      <xsl:if test="$id='00009'">臭素系難燃剤(PBB類,PBDE類およびHBCDDを除く)</xsl:if>
+      <xsl:if test="$id='00008'">臭素系難燃剤(PBB類、PBDE類およびHBCDDを除く)</xsl:if>
+      <xsl:if test="$id='00009'">臭素系難燃剤(PBB類、PBDE類およびHBCDDを除く)</xsl:if>
       <xsl:if test="$id='00010'">カドミウム/カドミウム化合物</xsl:if>
       <xsl:if test="$id='00011'">カドミウム/カドミウム化合物</xsl:if>
       <xsl:if test="$id='00012'">六価クロム化合物</xsl:if>
-      <xsl:if test="$id='00013'">二塩化コバルト</xsl:if>
-      <xsl:if test="$id='00014'">ジブチルスズ(DBT)化合物</xsl:if>
-      <xsl:if test="$id='00015'">ジオクチルスズ(DOT)化合物</xsl:if>
-      <xsl:if test="$id='00016'">フマル酸ジメチル</xsl:if>
-      <xsl:if test="$id='00017'">四ホウ酸二ナトリウム,ホウ砂</xsl:if>
-      <xsl:if test="$id='00018'">フッ素系温室効果ガス(PFC,SF6,HFC)</xsl:if>
+      <xsl:if test="$id='00013'">二塩化コバルト(II)</xsl:if>
+      <xsl:if test="$id='00014'">ジブチルスズ化合物 (DBT)</xsl:if>
+      <xsl:if test="$id='00015'">ジオクチルスズ化合物 (DOT)</xsl:if>
+      <xsl:if test="$id='00016'">ジメチル=フマラート</xsl:if>
+      <xsl:if test="$id='00017'">四ホウ酸二ナトリウム類</xsl:if>
+      <xsl:if test="$id='00018'">フッ素系温室効果ガス (PFC, SF6, HFC)</xsl:if>
       <xsl:if test="$id='00019'">ホルムアルデヒド</xsl:if>
-      <xsl:if test="$id='00020'">ヘキサブロモシクロドデカン(HBCDD)およびすべての主要ジアステレオ異性体:α-ヘキサブロモシクロドデカン β-ヘキサブロモシクロドデカン γ-ヘキサブロモシクロドデカン</xsl:if>
+      <xsl:if test="$id='00020'">ヘキサブロモシクロドデカン(HBCDD)</xsl:if>
       <xsl:if test="$id='00021'">鉛/鉛化合物</xsl:if>
       <xsl:if test="$id='00022'">鉛/鉛化合物</xsl:if>
       <xsl:if test="$id='00023'">鉛/鉛化合物</xsl:if>
       <xsl:if test="$id='00024'">鉛/鉛化合物</xsl:if>
       <xsl:if test="$id='00025'">鉛/鉛化合物</xsl:if>
-      <xsl:if test="$id='00026'">クロム酸鉛</xsl:if>
-      <xsl:if test="$id='00027'">硫酸モリブデン酸クロム酸鉛(別名:モリブデン赤)(別名:C.I.ピグメントレッド104)</xsl:if>
-      <xsl:if test="$id='00028'">硫クロム酸鉛黄色(別名:C.I.ピグメントイエロー34)</xsl:if>
+      <xsl:if test="$id='00026'">クロム酸鉛(II)</xsl:if>
+      <xsl:if test="$id='00027'">C.I.ピグメントレッド104</xsl:if>
+      <xsl:if test="$id='00028'">C.I.ピグメントイエロー34</xsl:if>
       <xsl:if test="$id='00029'">水銀/水銀化合物</xsl:if>
       <xsl:if test="$id='00030'">水銀/水銀化合物</xsl:if>
-      <xsl:if test="$id='00031'">ニッケル</xsl:if>
-      <xsl:if test="$id='00032'">オゾン層破壊物質(CFC,ハロン,HBFC,HCFC&amp;その他)</xsl:if>
+      <xsl:if test="$id='00031'">ニッケル/ニッケル化合物</xsl:if>
+      <xsl:if test="$id='00032'">オゾン層破壊物質 (CFC, Halon, HBFC, HCFC その他)</xsl:if>
       <xsl:if test="$id='00033'">過塩素酸塩</xsl:if>
-      <xsl:if test="$id='00035'">2-(2H-1,2,3-ベンゾトリアゾール-2-イル)-4,6-ジ-tert-ブチルフェノール(別名:紫外線吸収剤[UV-320])</xsl:if>
-      <xsl:if test="$id='00036'">フタル酸エステル類　グループ1 (BBP, DBP, DEHP)</xsl:if>
-      <xsl:if test="$id='00037'">フタル酸エステル類　グループ2 (DIDP, DINP, DNOP)</xsl:if>
-      <xsl:if test="$id='00038'">フタル酸ビス(2-エチルヘキシル)(別名:ジエチルヘキシルフタレート)(略称:DEHP)</xsl:if>
-      <xsl:if test="$id='00039'">フタル酸ジブチル</xsl:if>
-      <xsl:if test="$id='00040'">フタル酸ベンジルブチル</xsl:if>
-      <xsl:if test="$id='00041'">フタル酸ジイソブチル</xsl:if>
-      <xsl:if test="$id='00042'">1,2-ベンゼンジカルボン酸の,炭素数7の側鎖炭化水素を主成分とする炭素数6~8側鎖アルキルエステル類(略称:DIHP)</xsl:if>
-      <xsl:if test="$id='00043'">1,2-ベンゼンジカルボン酸の,炭素数7～11の分岐および直鎖アルキルエステル類(略称:DHNUP)</xsl:if>
-      <xsl:if test="$id='00044'">ポリ臭化ビフェニル(PBB類)</xsl:if>
-      <xsl:if test="$id='00045'">ポリ臭化ジフェニルエーテル(PBDE類)</xsl:if>
-      <xsl:if test="$id='00046'">ポリ塩化ビフェニル類(PCB類)及び特定代替物質</xsl:if>
-      <xsl:if test="$id='00047'">ポリ塩化ターフェニル(PCT類)</xsl:if>
-      <xsl:if test="$id='00048'">ポリ塩化ナフタレン(PCN類)</xsl:if>
+      <xsl:if test="$id='00035'">2-(2H-1,2,3-ベンゾトリアゾール-2-yl)-4,6-ジ-tert-ブチルフェノール</xsl:if>
+      <xsl:if test="$id='00036'">フタル酸エステル類 グループ1 (BBP, DBP, DEHP)</xsl:if>
+      <xsl:if test="$id='00037'">フタル酸エステル類 グループ2 (DIDP, DINP, DNOP)</xsl:if>
+      <xsl:if test="$id='00038'">フタル酸ビス(2-エチルヘキシル) (DEHP)</xsl:if>
+      <xsl:if test="$id='00039'">ジブチルフタラート(DBP)</xsl:if>
+      <xsl:if test="$id='00040'">ベンジル=ブタン-1-イル=フタラート(BBP)</xsl:if>
+      <xsl:if test="$id='00041'">ジイソブチル=フタラート</xsl:if>
+      <xsl:if test="$id='00042'">ジアルキル(C=6~8、分枝、C7に富む)=フタラート</xsl:if>
+      <xsl:if test="$id='00043'">ジアルキル(C=7~11、分岐、線型)=フタラート</xsl:if>
+      <xsl:if test="$id='00044'">ポリ臭化ビフェニル類(PBB類)</xsl:if>
+      <xsl:if test="$id='00045'">ポリ臭化ジフェニルエーテル類(PBDE類)</xsl:if>
+      <xsl:if test="$id='00046'">ポリ塩化ビフェニル類(PCB類)及び特定代替品</xsl:if>
+      <xsl:if test="$id='00047'">ポリ塩化ターフェニル類(PCT類)</xsl:if>
+      <xsl:if test="$id='00048'">ポリ塩化ナフタレン類(PCN類)</xsl:if>
       <xsl:if test="$id='00049'">放射性物質</xsl:if>
-      <xsl:if test="$id='00050'">アルミノケイ酸塩耐火性セラミック繊維</xsl:if>
-      <xsl:if test="$id='00051'">ジルコニアアルミノケイ酸塩耐火性セラミック繊維</xsl:if>
-      <xsl:if test="$id='00052'">短鎖塩素化パラフィン(C10-13)</xsl:if>
+      <xsl:if test="$id='00050'">耐火セラミック繊維 (RCF)、アルミノ珪酸塩</xsl:if>
+      <xsl:if test="$id='00051'">耐火セラミック繊維 (RCF)、ジルコニアアルミノ珪酸塩</xsl:if>
+      <xsl:if test="$id='00052'">短鎖型塩化パラフィン類(炭素数10~13)</xsl:if>
       <xsl:if test="$id='00053'">クロム酸ストロンチウム</xsl:if>
-      <xsl:if test="$id='00054'">ビス(トリブチルスズ)=オキシド(略称:TBTO)</xsl:if>
+      <xsl:if test="$id='00054'">ビス[トリブチルスタンニル]オキシド (TBTO)</xsl:if>
       <xsl:if test="$id='00055'">三置換有機スズ化合物</xsl:if>
-      <xsl:if test="$id='00056'">りん酸トリス(2-クロロエチル)</xsl:if>
-      <xsl:if test="$id='00057'">4-(1，1，3，3-テトラメチルブチル)フェノール(別名:4-tert-オクチルフェノール)</xsl:if>
+      <xsl:if test="$id='00056'">トリス(2-クロロエチル)=ホスファート</xsl:if>
+      <xsl:if test="$id='00057'">4-(1,1,3,3-テトラメチルブチル)フェノール</xsl:if>
       <xsl:if test="$id='00058'">ビス(2-メトキシエチル)エーテル</xsl:if>
-      <xsl:if test="$id='00059'">フタル酸 ビス(2-メトキシエチル)(別名:ビス(2-メトキシエチル)フタラート)</xsl:if>
+      <xsl:if test="$id='00059'">ビス(2-メトキシエチル)=フタラート</xsl:if>
       <xsl:if test="$id='00060'">クロム酸八水酸化五亜鉛</xsl:if>
       <xsl:if test="$id='00061'">ヒドロキシオクタオキソ二亜鉛酸二クロム酸カリウム</xsl:if>
       <xsl:if test="$id='00062'">塩素系難燃剤(CFR)</xsl:if>
       <xsl:if test="$id='00063'">塩素系難燃剤(CFR)</xsl:if>
-      <xsl:if test="$id='00064'">ビス(ペンタブロモフェニル)エーテル(別名:デカブロモジフェニルエーテル)(略称:デカBDE)</xsl:if>
-      <xsl:if test="$id='00065'">塩基性亜硫酸鉛</xsl:if>
-      <xsl:if test="$id='00066'">1，2-ビス(2-メトキシエトキシ)エタン(別名:トリエチレングリコールジメチルエーテル)(略称:TEGDME)(別名:トリグリム)</xsl:if>
-      <xsl:if test="$id='00067'">二塩基性リン酸鉛</xsl:if>
-      <xsl:if test="$id='00068'">1，2-ジメトキシエタン(別名:エチレングリコールジメチルエーテル)(略称:EGDME)</xsl:if>
+      <xsl:if test="$id='00064'">デカブロモジフェニルエーテル (DecaBDE)</xsl:if>
+      <xsl:if test="$id='00065'">亜硫酸と鉛の塩(二塩基性)</xsl:if>
+      <xsl:if test="$id='00066'">1,2-ビス(2-メトキシエトキシ)エタン(TEGDME;トリグライム)</xsl:if>
+      <xsl:if test="$id='00067'">二酸化ホスホン酸三鉛</xsl:if>
+      <xsl:if test="$id='00068'">1,2-ジメトキシエタン;エチレングリコールジメチルエーテル(EGDME)</xsl:if>
       <xsl:if test="$id='00069'">4-アミノアゾベンゼン</xsl:if>
-      <xsl:if test="$id='00070'">三塩基性硫酸鉛</xsl:if>
-      <xsl:if test="$id='00071'">オレンジ鉛(別名:四酸化鉛)</xsl:if>
-      <xsl:if test="$id='00072'">パイロクロア,アンチモン鉛イエロー(別名:C.I.ピグメントイエロー41)</xsl:if>
-      <xsl:if test="$id='00073'">四塩基性硫酸鉛</xsl:if>
-      <xsl:if test="$id='00074'">1,2-ジエトキシエタン(別名:ジエチルグリコール)(別名:ジエチルセロソルブ)</xsl:if>
+      <xsl:if test="$id='00070'">三酸化硫酸四鉛</xsl:if>
+      <xsl:if test="$id='00071'">四酸化三鉛</xsl:if>
+      <xsl:if test="$id='00072'">パイロクロア、C.I. ピグメントイエロー41</xsl:if>
+      <xsl:if test="$id='00073'">四酸化硫酸五鉛</xsl:if>
+      <xsl:if test="$id='00074'">1,2-ジエトキシエタン</xsl:if>
       <xsl:if test="$id='00075'">三酸化二ホウ素</xsl:if>
-      <xsl:if test="$id='00076'">ジブチルスズジクロリド(別名:ジクロロジブチルスズ)(略称:DBTC)</xsl:if>
+      <xsl:if test="$id='00076'">ジクロロジブチルスズ(DBTC)</xsl:if>
       <xsl:if test="$id='00077'">シアナミド鉛</xsl:if>
       <xsl:if test="$id='00078'">N,N-ジメチルホルムアミド</xsl:if>
-      <xsl:if test="$id='00079'">ケイ酸バリウム(限定条件:組成比1:1で,鉛をドープしたもので,鉛濃度が生殖毒性を示す値濃度以上のもの)</xsl:if>
-      <xsl:if test="$id='00080'">1,2-ベンゼンジカルボン酸ジペンチルエステル(註釈:分岐と直鎖のどちらも対象)</xsl:if>
-      <xsl:if test="$id='00081'">フタル酸ジイソペンチル(略称:DIPP)</xsl:if>
-      <xsl:if test="$id='00082'">n-ペンチル-イソペンチルフタレート(別名:フタル酸n-ペンチル-イソペンチル)</xsl:if>
-      <xsl:if test="$id='00083'">三酸化チタン鉛(別名:チタン酸鉛)</xsl:if>
-      <xsl:if test="$id='00084'">ジルコン酸チタン酸鉛</xsl:if>
-      <xsl:if test="$id='00085'">オキシ硫酸鉛(別名:塩基性硫酸鉛)</xsl:if>
-      <xsl:if test="$id='00086'">フタル酸ジオキソ三鉛</xsl:if>
-      <xsl:if test="$id='00087'">ビス(オクタデカナト)ジオキソ三鉛</xsl:if>
-      <xsl:if test="$id='00088'">脂肪酸鉛塩(限定:炭素数16~18のもの)</xsl:if>
+      <xsl:if test="$id='00079'">ケイ酸とバリウムの塩(1:1)(鉛ドープ)</xsl:if>
+      <xsl:if test="$id='00080'">ジペンチル(分枝および直鎖)=フタラート</xsl:if>
+      <xsl:if test="$id='00081'">ジイソペンチル=フタラート</xsl:if>
+      <xsl:if test="$id='00082'">N-ペンチル-イソペンチルフタル酸</xsl:if>
+      <xsl:if test="$id='00083'">三酸化チタン鉛</xsl:if>
+      <xsl:if test="$id='00084'">チタン酸ジルコニウム酸鉛</xsl:if>
+      <xsl:if test="$id='00085'">酸化硫酸二鉛</xsl:if>
+      <xsl:if test="$id='00086'">ジオキソ(フタラト)三鉛</xsl:if>
+      <xsl:if test="$id='00087'">ジオキソ(ジステアラト)三鉛</xsl:if>
+      <xsl:if test="$id='00088'">脂肪酸(C16-C18)と鉛の塩</xsl:if>
       <xsl:if test="$id='00089'">二硝酸鉛</xsl:if>
-      <xsl:if test="$id='00090'">フタル酸ジイソデシル</xsl:if>
-      <xsl:if test="$id='00091'">ジヘキサン-1-イル=フタラート</xsl:if>
-      <xsl:if test="$id='00092'">メチルヘキサヒドロフタル酸無水物</xsl:if>
+      <xsl:if test="$id='00090'">フタル酸ジイソデシル(DIDP)</xsl:if>
+      <xsl:if test="$id='00091'">フタル酸ジ-n-ヘキシル(DnHP)</xsl:if>
+      <xsl:if test="$id='00092'">メチルヘキサヒドロ無水フタル酸</xsl:if>
       <xsl:if test="$id='00093'">カドミウム</xsl:if>
-      <xsl:if test="$id='00094'">酸化カドミウム(Ⅱ)</xsl:if>
-      <xsl:if test="$id='00095'">フタル酸ジペンチル</xsl:if>
-      <xsl:if test="$id='00096'">ぺルフルオロオクタン酸</xsl:if>
-      <xsl:if test="$id='00097'">ペンタデカフルオロオクタン酸アンモニウム</xsl:if>
-      <xsl:if test="$id='00098'">4-ノニルフェノール,分岐および直鎖[フェノールの4の位置で炭素数9の直鎖および/または分岐したアルキル鎖が共有結合している物質,個々の異性体またはその混合物のいずれも含むUVCB物質およびwell-defined物質(組成等が分かっている物質)]</xsl:if>
+      <xsl:if test="$id='00094'">酸化カドミウム</xsl:if>
+      <xsl:if test="$id='00095'">フタル酸ジペンチル、フタル酸ジアミル(DPP)</xsl:if>
+      <xsl:if test="$id='00096'">ぺルフルオロオクタン酸(PFOA)</xsl:if>
+      <xsl:if test="$id='00097'">ペンタデカフルオロオクタン酸アンモニウム(APFO)</xsl:if>
+      <xsl:if test="$id='00098'">4-ノニルフェノール、分岐および直鎖のエトキシレート</xsl:if>
       <xsl:if test="$id='00099'">硫化カドミウム</xsl:if>
-      <xsl:if test="$id='00100'">リン酸トリス(ジメチルフェニル)</xsl:if>
-      <xsl:if test="$id='00102'">3,3’-[(1,1’-ビフェニル)-4,4’-ジイルビス(アゾ)]ビス(4-アミノナフタレン-1-スルホネート)二ナトリウム(別名CIダイレクトレッド28)</xsl:if>
-      <xsl:if test="$id='00103'">ペルフルオロオクタン酸(PFOA)及び個々の塩およびPFOAのエステル</xsl:if>
-      <xsl:if test="$id='00104'">ペルフルオロオクタン酸(PFOA)及び個々の塩およびPFOAのエステル</xsl:if>
-      <xsl:if test="$id='00105'">2-イミダゾリジンチオン</xsl:if>
-      <xsl:if test="$id='00106'">フタル酸ジヘキシル</xsl:if>
-      <xsl:if test="$id='00107'">フタル酸ジイソノニル</xsl:if>
+      <xsl:if test="$id='00100'">トリス(ジメチルフェニル)=ホスファート</xsl:if>
+      <xsl:if test="$id='00102'">3,3&apos;-(ビフェニル-4,4&apos;-ジイルビスアゾ)ビス(4-アミノ-1-ナフタレンスルホン酸ナトリウム)(C.I. ダイレクトレッド 28)</xsl:if>
+      <xsl:if test="$id='00103'">ペルフルオロオクタン酸(PFOA)と個々の塩及びPFOAのエステル</xsl:if>
+      <xsl:if test="$id='00104'">ペルフルオロオクタン酸(PFOA)と個々の塩及びPFOAのエステル</xsl:if>
+      <xsl:if test="$id='00105'">イミダゾリジン-2-チオン(2-イミダゾリン-2-チオール)</xsl:if>
+      <xsl:if test="$id='00106'">ジヘキシル(分岐、線型)=フタラート</xsl:if>
+      <xsl:if test="$id='00107'">フタル酸ジイソノニル(DINP)</xsl:if>
       <xsl:if test="$id='00108'">ベンゾ[a]ピレン</xsl:if>
       <xsl:if test="$id='00109'">ベンゾ[e]ピレン</xsl:if>
       <xsl:if test="$id='00110'">ベンゾ[a]アントラセン</xsl:if>
@@ -477,44 +477,55 @@
       <xsl:if test="$id='00121'">ベンゾ[j]フルオランテン</xsl:if>
       <xsl:if test="$id='00122'">ベンゾ[k]フルオランテン</xsl:if>
       <xsl:if test="$id='00123'">ジベンゾ[a,h]アントラセン</xsl:if>
-      <xsl:if test="$id='00124'">パーフルオロオクタンスルホン酸(PFOS)</xsl:if>
-      <xsl:if test="$id='00125'">パーフルオロオクタンスルホン酸(PFOS)</xsl:if>
-      <xsl:if test="$id='00126'">ジナトリウム=4-アミノ-3-[4’-(2,4-ジアミノフェニルアゾ)-1,1’-ビフェニル-4-イルアゾ]-5-ヒドロキシ-6-フェニルアゾ-2,7-ナフタレンジスルホナート(別名CIダイレクトブラック38)</xsl:if>
-      <xsl:if test="$id='00127'">N-フェニルベンゼンジアミンとスチレン,2,4,4-トリメチルペンタンの反応物</xsl:if>
-      <xsl:if test="$id='00128'">ビス(2-エチルヘキサン-1-イル)=4,4-ジオクタン-1-イル-3,5-ジチア-4-スタンナヘプタンジオアート(略称:DOTE)(別名:ジオクチルスズビス(2-エチルヘキシルチオグリコラート))</xsl:if>
-      <xsl:if test="$id='00129'">10-エチル-4,4-ジオクチル-7-オキソ-8-オキサ-3,5-ジチア-4-スタンナテトラデカン酸2-エチルヘキシルと10-エチル-4-[[2-[(2-(エチルヘキシル)オキシ]-2-オキソエチル]チオ]-4-オクチル-7-オキソ-8-オキサ-3,5-ジチア-4-スタンナテトラデカン酸2-エチルヘキシルの反応生成物(DOTEとMOTEの反応生成物)</xsl:if>
-      <xsl:if test="$id='00130'">2-(2H-ベンゾトリアゾール-2-イル)-4,6-ジ-tert-ペンチルフェノール(別名:紫外線吸収剤[ＵＶ-328])</xsl:if>
-      <xsl:if test="$id='00131'">1,2-ベンゼンジカルボン酸,ジC6-10アルキルエステル; 1,2-ベンゼンジカルボン酸,デシル,ヘキシル,オクチル混合ジエステル(0.3％以上のフタル酸ジヘキシル (EC No. 201-559-5)を含む場合)</xsl:if>
+      <xsl:if test="$id='00124'">パーフルオロオクタンスルホン酸塩(PFOS)</xsl:if>
+      <xsl:if test="$id='00125'">パーフルオロオクタンスルホン酸塩(PFOS)</xsl:if>
+      <xsl:if test="$id='00126'">C.I.ダイレクトブラック38</xsl:if>
+      <xsl:if test="$id='00128'">ビス(2-エチルヘキサン-1-イル)=2,2’-[(ジオクタン-1-イルスタンナンジイル)ビス(スルファンジイル)]ジアセタート</xsl:if>
+      <xsl:if test="$id='00129'">10-エチル-4,4-ジオクチル-7-オキソ-8-オキサ-3,5-ジチア-4-スタンナテトラデカン酸 2-エチルヘキシルと10-エチル-4-[[2-[(2-エチルヘキシル)オキシ]-2-オキソエチル]チオ]-4-オクチル-7-オキソ-8-オキサ-3,5-ジチア-4-スタンナテトラデカン酸 2-エチルヘキシルを構成要素とする物質 (DOTEとMOTEを構成要素とする物質)</xsl:if>
+      <xsl:if test="$id='00130'">2-(2H-ベンゾトリアゾール-2-イル)-4,6-ジ-tert-ペンチルフェノール(UV-328)</xsl:if>
+      <xsl:if test="$id='00131'">1,2-ベンゼンジカルボン酸、ジ-C6-10-アルキルエステルまたはデシル、ヘキシル、オクチルジエステルの混合物</xsl:if>
       <xsl:if test="$id='00132'">水銀/水銀化合物</xsl:if>
       <xsl:if test="$id='00133'">1,3-プロパンスルトン</xsl:if>
-      <xsl:if test="$id='00134'">2,4-ジ-tert-ブチル-6-(5-クロロ-2H-1,2,3-ベンゾトリアゾール-2-イル)フェノール</xsl:if>
-      <xsl:if test="$id='00135'">2-(2H-1,2,3-ベンゾトリアゾール-2-イル)-6-sec-ブチル-4-tert-ブチルフェノール</xsl:if>
-      <xsl:if test="$id='00137'">ペルフルオロノナン酸</xsl:if>
+      <xsl:if test="$id='00134'">2-(2-ヒドロキシ-3,5-ジ-t-ブチルフェニル)-5-クロロベンゾトリアゾール[別名:2-(3,5-ジ-tert-ブチル-2-ヒドロキシフェニル)-5-クロロベンゾトリアゾール]</xsl:if>
+      <xsl:if test="$id='00135'">2-(2H-ベンゾトリアゾール-2-イル)-6-sec-ブチル-4-tert-ブチルフェノール</xsl:if>
       <xsl:if test="$id='00138'">ベンゾ[a]ピレン</xsl:if>
-      <xsl:if test="$id='00140'">パーフルオロノナン-1-酸(2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9-ヘプタデカフルオロノナン酸、その塩とアンモニウム塩)</xsl:if>
-      <xsl:if test="$id='00141'">ビスフェノールA</xsl:if>
-      <xsl:if test="$id='00142'">ノナデカフルオロデカン酸(PFDA)およびそのナトリウムとアンモニウム塩、(ノナデカフルオロデカン酸アンモニウム、ノナデカフルオロデカン酸、ノナデカフルオロデカン酸ナトリウム)</xsl:if>
+      <xsl:if test="$id='00139'">ジシクロヘキサン-1-イル=フタラート</xsl:if>
+      <xsl:if test="$id='00140'">パーフルオロノナン-1-酸とそのナトリウム及びアンモニウム塩類</xsl:if>
+      <xsl:if test="$id='00141'">4,4&apos;-イソプロピリデンジフェノール(ビスフェノールA)</xsl:if>
+      <xsl:if test="$id='00142'">ノナデカフルオロデカン酸(PFDA)およびそのナトリウムとアンモニウム塩</xsl:if>
+      <xsl:if test="$id='00143'">ペルフルオロヘキサン-1-スルホン酸及びその塩</xsl:if>
+      <xsl:if test="$id='00144'">クリセン</xsl:if>
+      <xsl:if test="$id='00145'">ベンゾ[a]アントラセン</xsl:if>
+      <xsl:if test="$id='00146'">水酸化カドミウム</xsl:if>
+      <xsl:if test="$id='00147'">1,6,7,8,9,14,15,16,17,17,18,18-ドデカクロロペンタシクロ[12.2.1.16,9.02,13.05,10]オクタデカ-7,15-ジエン ("デクロランプラス"™)</xsl:if>
+      <xsl:if test="$id='00148'">ベンゾ[g,h,i]ペリレン</xsl:if>
+      <xsl:if test="$id='00149'">2,2,4,4,6,6,8,8-オクタメチルシクロテトラシロキサン</xsl:if>
+      <xsl:if test="$id='00150'">2,2,4,4,6,6,8,8,10,10-デカメチルシクロペンタシロキサン</xsl:if>
+      <xsl:if test="$id='00151'">2,2,4,4,6,6,8,8,10,10,12,12-ドデカメチルシクロヘキサシロキサン</xsl:if>
+      <xsl:if test="$id='00152'">八ホウ酸二ナトリウムアンヒドロ亜酸</xsl:if>
+      <xsl:if test="$id='00153'">水素化テルフェニル</xsl:if>
+      <xsl:if test="$id='00154'">鉛</xsl:if>
     </xsl:if>
-    <xsl:if test="$lang!='ja'">
+    <xsl:if test="$lang='en'">
       <xsl:if test="$id='00001'">Diarsenic pentoxide</xsl:if>
       <xsl:if test="$id='00002'">Diarsenic trioxide</xsl:if>
       <xsl:if test="$id='00003'">Asbestos</xsl:if>
       <xsl:if test="$id='00004'">Azocolourants and azodyes which form certain aromatic amines</xsl:if>
       <xsl:if test="$id='00005'">Beryllium Oxide</xsl:if>
-      <xsl:if test="$id='00007'">Boric Acid</xsl:if>
+      <xsl:if test="$id='00007'">Boric acid</xsl:if>
       <xsl:if test="$id='00008'">Brominated flame retardants (other than PBBs, PBDEs, or HBCDD)</xsl:if>
       <xsl:if test="$id='00009'">Brominated flame retardants (other than PBBs, PBDEs, or HBCDD)</xsl:if>
       <xsl:if test="$id='00010'">Cadmium/Cadmium compounds</xsl:if>
       <xsl:if test="$id='00011'">Cadmium/Cadmium compounds</xsl:if>
       <xsl:if test="$id='00012'">Chromium (VI) Compounds</xsl:if>
-      <xsl:if test="$id='00013'">Cobalt dichloride</xsl:if>
+      <xsl:if test="$id='00013'">Cobalt Dichloride</xsl:if>
       <xsl:if test="$id='00014'">Dibutyltin (DBT) compounds</xsl:if>
       <xsl:if test="$id='00015'">Dioctyltin (DOT) compounds</xsl:if>
       <xsl:if test="$id='00016'">Dimethyl Fumarate (DMF)</xsl:if>
       <xsl:if test="$id='00017'">Disodium tetraborates</xsl:if>
       <xsl:if test="$id='00018'">Fluorinated Greenhouse Gases (PFC, SF6, HFC)</xsl:if>
       <xsl:if test="$id='00019'">Formaldehyde</xsl:if>
-      <xsl:if test="$id='00020'">Hexabromocyclododecane (HBCDD) and all major diastereoisomers identified: Alpha-hexabromocyclododecane Beta-hexabromocyclododecane Gamma-hexabromocyclododecane</xsl:if>
+      <xsl:if test="$id='00020'">Hexabromocyclododecane (HBCDD)</xsl:if>
       <xsl:if test="$id='00021'">Lead/Lead Compounds</xsl:if>
       <xsl:if test="$id='00022'">Lead/Lead Compounds</xsl:if>
       <xsl:if test="$id='00023'">Lead/Lead Compounds</xsl:if>
@@ -525,7 +536,7 @@
       <xsl:if test="$id='00028'">Lead sulfochromate yellow (C.I. Pigment Yellow 34)</xsl:if>
       <xsl:if test="$id='00029'">Mercury/Mercury Compounds</xsl:if>
       <xsl:if test="$id='00030'">Mercury/Mercury Compounds</xsl:if>
-      <xsl:if test="$id='00031'">Nickel</xsl:if>
+      <xsl:if test="$id='00031'">Nickel/Nickel Compounds</xsl:if>
       <xsl:if test="$id='00032'">Ozone Depleting Substances (CFC, Halon, HBFC, HCFC &amp; others)</xsl:if>
       <xsl:if test="$id='00033'">Perchlorates</xsl:if>
       <xsl:if test="$id='00035'">2-benzotriazol-2-yl-4,6-di-tert-butylphenol (UV-320)</xsl:if>
@@ -589,9 +600,9 @@
       <xsl:if test="$id='00093'">Cadmium</xsl:if>
       <xsl:if test="$id='00094'">Cadmium oxide</xsl:if>
       <xsl:if test="$id='00095'">Dipentyl phthalate (DPP)</xsl:if>
-      <xsl:if test="$id='00096'">Pentadecafluorooctanoic acid (PFOA)</xsl:if>
+      <xsl:if test="$id='00096'">Pentadecafluorooctanoic Acid (PFOA)</xsl:if>
       <xsl:if test="$id='00097'">Ammonium pentadecafluorooctanoate (APFO)</xsl:if>
-      <xsl:if test="$id='00098'">4-Nonylphenol, branched and linear, ethoxylated [substances with a linear and/or branched alkyl chain with a carbon number of 9 covalently bound in position 4 to phenol, ethoxylated covering UVCB- and well-defined substances, polymers and homologues, which include any of the individual isomers and/or combinations thereof]</xsl:if>
+      <xsl:if test="$id='00098'">4-Nonylphenol, branched and linear, ethoxylated</xsl:if>
       <xsl:if test="$id='00099'">Cadmium sulphide</xsl:if>
       <xsl:if test="$id='00100'">Trixylyl phosphate</xsl:if>
       <xsl:if test="$id='00102'">Disodium 3,3&apos;-[[1,1&apos;-biphenyl]-4,4&apos;-diylbis(azo)]bis(4-aminonaphthalene-1-sulphonate) (C.I. Direct Red 28)</xsl:if>
@@ -619,20 +630,1099 @@
       <xsl:if test="$id='00124'">Perfluorooctane sulfonates (PFOS)</xsl:if>
       <xsl:if test="$id='00125'">Perfluorooctane sulfonates (PFOS)</xsl:if>
       <xsl:if test="$id='00126'">Disodium 4-amino-3-[[4&apos;-[(2,4-diaminophenyl)azo][1,1&apos;-biphenyl]-4-yl]azo]-5-hydroxy-6-(phenylazo)naphthalene-2,7-disulphonate (C.I. Direct Black 38)</xsl:if>
-      <xsl:if test="$id='00127'">Benzenamine, N-phenyl-, reaction products with styrene and 2,4,4-trimethylpentene</xsl:if>
       <xsl:if test="$id='00128'">2-ethylhexyl 10-ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate (DOTE)</xsl:if>
       <xsl:if test="$id='00129'">reaction mass of 2-ethylhexyl 10-ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate and 2-ethylhexyl 10-ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate (reaction mass of DOTE and MOTE)</xsl:if>
       <xsl:if test="$id='00130'">2-(2H-benzotriazol-2-yl)-4,6-ditertpentylphenol (UV-328)</xsl:if>
-      <xsl:if test="$id='00131'">1,2-benzenedicarboxylic acid, di-C6-10-alkyl esters; 1,2-benzenedicarboxylic acid, mixed decyl and hexyl and octyl diesters with ≥ 0.3% of dihexyl phthalate (EC No. 201-559-5)</xsl:if>
+      <xsl:if test="$id='00131'">1,2-benzenedicarboxylic acid, di-C6-10-alkyl esters or mixed decyl and hexyl and octyl diesters</xsl:if>
       <xsl:if test="$id='00132'">Mercury/Mercury Compounds</xsl:if>
       <xsl:if test="$id='00133'">1,3-propanesultone</xsl:if>
       <xsl:if test="$id='00134'">2,4-di-tert-butyl-6-(5-chlorobenzotriazol-2-yl)phenol (UV-327)</xsl:if>
       <xsl:if test="$id='00135'">2-(2H-benzotriazol-2-yl)-4-(tert-butyl)-6-(sec-butyl)phenol (UV-350)</xsl:if>
-      <xsl:if test="$id='00137'">Perfluorononan-1-oic-acid and its sodium and ammonium salts</xsl:if>
-      <xsl:if test="$id='00138'">Benzo[def]chrysene</xsl:if>
+      <xsl:if test="$id='00138'">Benzo[a]pyrene</xsl:if>
+      <xsl:if test="$id='00139'">Dicyclohexyl phthalate</xsl:if>
       <xsl:if test="$id='00140'">Perfluorononan-1-oic-acid and its sodium and ammonium salts</xsl:if>
-      <xsl:if test="$id='00141'">4,4’-isopropylidenediphenol</xsl:if>
+      <xsl:if test="$id='00141'">4,4&apos;-isopropylidenediphenol</xsl:if>
       <xsl:if test="$id='00142'">Nonadecafluorodecanoic acid (PFDA) and its sodium and ammonium salts</xsl:if>
+      <xsl:if test="$id='00143'">Perfluorohexane-1-sulphonic acid and its salts</xsl:if>
+      <xsl:if test="$id='00144'">Chrysene</xsl:if>
+      <xsl:if test="$id='00145'">Benz[a]anthracene</xsl:if>
+      <xsl:if test="$id='00146'">Cadmium hydroxide</xsl:if>
+      <xsl:if test="$id='00147'">1,6,7,8,9,14,15,16,17,17,18,18-Dodecachloropentacyclo[12.2.1.16,9.02,13.05,10]octadeca-7,15-diene (“Dechlorane Plus”™)</xsl:if>
+      <xsl:if test="$id='00148'">Benzo[ghi]perylene</xsl:if>
+      <xsl:if test="$id='00149'">Octamethylcyclotetrasiloxane</xsl:if>
+      <xsl:if test="$id='00150'">Decamethylcyclopentasiloxane</xsl:if>
+      <xsl:if test="$id='00151'">Dodecamethylcyclohexasiloxane</xsl:if>
+      <xsl:if test="$id='00152'">Disodium octaborate</xsl:if>
+      <xsl:if test="$id='00153'">Terphenyl, hydrogenated</xsl:if>
+      <xsl:if test="$id='00154'">Lead</xsl:if>
+    </xsl:if>
+    <xsl:if test="$lang='zh'">
+      <xsl:if test="$id='00001'">五氧化二砷</xsl:if>
+      <xsl:if test="$id='00002'">三氧化二砷</xsl:if>
+      <xsl:if test="$id='00003'">Asbestos</xsl:if>
+      <xsl:if test="$id='00004'">Azocolourants and azodyes which form certain aromatic amines</xsl:if>
+      <xsl:if test="$id='00005'">氧化铍</xsl:if>
+      <xsl:if test="$id='00007'">Boric acid</xsl:if>
+      <xsl:if test="$id='00008'">Brominated flame retardants (other than PBBs, PBDEs, or HBCDD)</xsl:if>
+      <xsl:if test="$id='00009'">Brominated flame retardants (other than PBBs, PBDEs, or HBCDD)</xsl:if>
+      <xsl:if test="$id='00010'">Cadmium/Cadmium compounds</xsl:if>
+      <xsl:if test="$id='00011'">Cadmium/Cadmium compounds</xsl:if>
+      <xsl:if test="$id='00012'">Chromium (VI) Compounds</xsl:if>
+      <xsl:if test="$id='00013'">氯化钴(II)</xsl:if>
+      <xsl:if test="$id='00014'">Dibutyltin (DBT) compounds</xsl:if>
+      <xsl:if test="$id='00015'">Dioctyltin (DOT) compounds</xsl:if>
+      <xsl:if test="$id='00016'">(E)-2-丁烯二酸二甲酯</xsl:if>
+      <xsl:if test="$id='00017'">Disodium tetraborates</xsl:if>
+      <xsl:if test="$id='00018'">Fluorinated Greenhouse Gases (PFC, SF6, HFC)</xsl:if>
+      <xsl:if test="$id='00019'">甲醛</xsl:if>
+      <xsl:if test="$id='00020'">Hexabromocyclododecane (HBCDD)</xsl:if>
+      <xsl:if test="$id='00021'">Lead/Lead Compounds</xsl:if>
+      <xsl:if test="$id='00022'">Lead/Lead Compounds</xsl:if>
+      <xsl:if test="$id='00023'">Lead/Lead Compounds</xsl:if>
+      <xsl:if test="$id='00024'">Lead/Lead Compounds</xsl:if>
+      <xsl:if test="$id='00025'">Lead/Lead Compounds</xsl:if>
+      <xsl:if test="$id='00026'">铬酸铅(Ⅱ)</xsl:if>
+      <xsl:if test="$id='00027'">钼铬红</xsl:if>
+      <xsl:if test="$id='00028'">中铬黄</xsl:if>
+      <xsl:if test="$id='00029'">Mercury/Mercury Compounds</xsl:if>
+      <xsl:if test="$id='00030'">Mercury/Mercury Compounds</xsl:if>
+      <xsl:if test="$id='00031'">Nickel/Nickel Compounds</xsl:if>
+      <xsl:if test="$id='00032'">Ozone Depleting Substances (CFC, Halon, HBFC, HCFC &amp; others)</xsl:if>
+      <xsl:if test="$id='00033'">Perchlorates</xsl:if>
+      <xsl:if test="$id='00035'">2-(2H)-苯并三氮唑-2-基)-4,6-双(1,1-二甲基乙基)苯酚</xsl:if>
+      <xsl:if test="$id='00036'">Phthalates, Selected Group 1 (BBP, DBP, DEHP)</xsl:if>
+      <xsl:if test="$id='00037'">Phthalates, Selected Group 2 (DIDP, DINP, DNOP)</xsl:if>
+      <xsl:if test="$id='00038'">邻苯二甲酸二(α-乙基己酯)</xsl:if>
+      <xsl:if test="$id='00039'">邻苯二甲酸二丁酯</xsl:if>
+      <xsl:if test="$id='00040'">苯二甲酸苄丁酯</xsl:if>
+      <xsl:if test="$id='00041'">邻苯二甲酸二异丁酯</xsl:if>
+      <xsl:if test="$id='00042'">邻苯二甲酸二C6-8支链烷基酯(富C7)</xsl:if>
+      <xsl:if test="$id='00043'">1,2-苯二酸-二(C7-11支链与直链)烷基(醇)酯</xsl:if>
+      <xsl:if test="$id='00044'">Polybrominated Biphenyls (PBBs)</xsl:if>
+      <xsl:if test="$id='00045'">Polybrominated Diphenylethers (PBDEs)</xsl:if>
+      <xsl:if test="$id='00046'">Polychlorinated Biphenyls (PCBs) and specific substitutes</xsl:if>
+      <xsl:if test="$id='00047'">Polychlorinated Terphenyls (PCTs)</xsl:if>
+      <xsl:if test="$id='00048'">Polychlorinated Naphthalenes (PCNs)</xsl:if>
+      <xsl:if test="$id='00049'">Radioactive substances</xsl:if>
+      <xsl:if test="$id='00050'">Aluminosilicate Refractory Ceramic Fibres</xsl:if>
+      <xsl:if test="$id='00051'">Zirconia Aluminosilicate Refractory Ceramic Fibres</xsl:if>
+      <xsl:if test="$id='00052'">Alkanes, C10-13, chloro (Short Chain Chlorinated Paraffins)</xsl:if>
+      <xsl:if test="$id='00053'">铬酸锶</xsl:if>
+      <xsl:if test="$id='00054'">二(三丁基锡)氧化物</xsl:if>
+      <xsl:if test="$id='00055'">Tri-substituted organostannic compounds</xsl:if>
+      <xsl:if test="$id='00056'">三(β-氯乙基)磷酸酯</xsl:if>
+      <xsl:if test="$id='00057'">4-(1,1,3,3-四甲基丁基)苯酚</xsl:if>
+      <xsl:if test="$id='00058'">二甘醇双甲醚</xsl:if>
+      <xsl:if test="$id='00059'">1,2-苯二甲酸二(2-甲氧乙基)酯</xsl:if>
+      <xsl:if test="$id='00060'">颜料黄36:1</xsl:if>
+      <xsl:if test="$id='00061'">氢氧化铬酸锌钾</xsl:if>
+      <xsl:if test="$id='00062'">Chlorinated Flame Retardants (CFR)</xsl:if>
+      <xsl:if test="$id='00063'">Chlorinated Flame Retardants (CFR)</xsl:if>
+      <xsl:if test="$id='00064'">十溴联苯醚</xsl:if>
+      <xsl:if test="$id='00065'">Sulfurous acid, lead salt, dibasic</xsl:if>
+      <xsl:if test="$id='00066'">三甘醇二甲醚</xsl:if>
+      <xsl:if test="$id='00067'">磷酸氧化铅</xsl:if>
+      <xsl:if test="$id='00068'">乙二醇二甲醚</xsl:if>
+      <xsl:if test="$id='00069'">4-氨基偶氮苯</xsl:if>
+      <xsl:if test="$id='00070'">硫酸三氧化四铅</xsl:if>
+      <xsl:if test="$id='00071'">四氧化三铅</xsl:if>
+      <xsl:if test="$id='00072'">C.I.颜料黄41</xsl:if>
+      <xsl:if test="$id='00073'">氧化铅与硫酸铅的复合物</xsl:if>
+      <xsl:if test="$id='00074'">1,2-二乙氧基乙烷</xsl:if>
+      <xsl:if test="$id='00075'">三氧化二硼</xsl:if>
+      <xsl:if test="$id='00076'">二丁基二氯化锡</xsl:if>
+      <xsl:if test="$id='00077'">氨基氰铅(2+)盐(1:1)</xsl:if>
+      <xsl:if test="$id='00078'">N,N-二甲基甲酰胺</xsl:if>
+      <xsl:if test="$id='00079'">掺杂铅矽酸钡</xsl:if>
+      <xsl:if test="$id='00080'">1,2-苯二甲酸二戊酯,支链和直链的</xsl:if>
+      <xsl:if test="$id='00081'">Diisopentylphthalate</xsl:if>
+      <xsl:if test="$id='00082'">N-pentyl-isopentylphthalate</xsl:if>
+      <xsl:if test="$id='00083'">钛酸铅</xsl:if>
+      <xsl:if test="$id='00084'">Lead titanium zirconium oxide</xsl:if>
+      <xsl:if test="$id='00085'">碱式硫酸铅</xsl:if>
+      <xsl:if test="$id='00086'">二盐基邻苯二甲酸铅</xsl:if>
+      <xsl:if test="$id='00087'">双(十八酸基)二氧代三铅</xsl:if>
+      <xsl:if test="$id='00088'">C16-18-脂肪酸铅盐</xsl:if>
+      <xsl:if test="$id='00089'">硝酸铅(Ⅱ)</xsl:if>
+      <xsl:if test="$id='00090'">Di-isodecyl phthalate (DIDP)</xsl:if>
+      <xsl:if test="$id='00091'">邻苯二甲酸二己酯</xsl:if>
+      <xsl:if test="$id='00092'">Hexahydromethylphthalic anhydride</xsl:if>
+      <xsl:if test="$id='00093'">镉</xsl:if>
+      <xsl:if test="$id='00094'">氧化镉</xsl:if>
+      <xsl:if test="$id='00095'">邻苯二甲酸二戊酯</xsl:if>
+      <xsl:if test="$id='00096'">十五氟辛酸</xsl:if>
+      <xsl:if test="$id='00097'">十五氟代辛酸铵盐</xsl:if>
+      <xsl:if test="$id='00098'">4-Nonylphenol, branched and linear, ethoxylated</xsl:if>
+      <xsl:if test="$id='00099'">硫化镉</xsl:if>
+      <xsl:if test="$id='00100'">磷酸二甲酚(1:3)酯</xsl:if>
+      <xsl:if test="$id='00102'">直接大红4B</xsl:if>
+      <xsl:if test="$id='00103'">Perfluorooctanoic acid (PFOA) and individual salts and esters of PFOA</xsl:if>
+      <xsl:if test="$id='00104'">Perfluorooctanoic acid (PFOA) and individual salts and esters of PFOA</xsl:if>
+      <xsl:if test="$id='00105'">2-咪唑烷硫酮</xsl:if>
+      <xsl:if test="$id='00106'">邻苯二甲酸二庚酯(支链和直链)</xsl:if>
+      <xsl:if test="$id='00107'">Diisononyl phthalate (DINP)</xsl:if>
+      <xsl:if test="$id='00108'">苯并[a]芘</xsl:if>
+      <xsl:if test="$id='00109'">苯并[e]芘</xsl:if>
+      <xsl:if test="$id='00110'">苯并[a]蒽</xsl:if>
+      <xsl:if test="$id='00111'">Chrysen</xsl:if>
+      <xsl:if test="$id='00112'">Benzo[b]fluoranthene</xsl:if>
+      <xsl:if test="$id='00113'">Benzo[j]fluoranthene</xsl:if>
+      <xsl:if test="$id='00114'">Benzo[k]fluoranthene</xsl:if>
+      <xsl:if test="$id='00115'">二苯并[a,h]蒽</xsl:if>
+      <xsl:if test="$id='00116'">苯并[a]芘</xsl:if>
+      <xsl:if test="$id='00117'">苯并[e]芘</xsl:if>
+      <xsl:if test="$id='00118'">苯并[a]蒽</xsl:if>
+      <xsl:if test="$id='00119'">Chrysen</xsl:if>
+      <xsl:if test="$id='00120'">Benzo[b]fluoranthene</xsl:if>
+      <xsl:if test="$id='00121'">Benzo[j]fluoranthene</xsl:if>
+      <xsl:if test="$id='00122'">Benzo[k]fluoranthene</xsl:if>
+      <xsl:if test="$id='00123'">二苯并[a,h]蒽</xsl:if>
+      <xsl:if test="$id='00124'">Perfluorooctane sulfonates (PFOS)</xsl:if>
+      <xsl:if test="$id='00125'">Perfluorooctane sulfonates (PFOS)</xsl:if>
+      <xsl:if test="$id='00126'">直接黑BN</xsl:if>
+      <xsl:if test="$id='00128'">10-乙基-4,4-二辛基-7-氧代-8-氧杂-3,5-二硫杂-4-锡杂十四烷酸2-乙基己基酯</xsl:if>
+      <xsl:if test="$id='00129'">reaction mass of 2-ethylhexyl 10-ethyl-4,4-dioctyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate and 2-ethylhexyl 10-ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-oxoethyl]thio]-4-octyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate (reaction mass of DOTE and MOTE)</xsl:if>
+      <xsl:if test="$id='00130'">2-[2-羟基-3,5-二(1,1-二甲基丙基苯基)]-2H-苯并三唑</xsl:if>
+      <xsl:if test="$id='00131'">1,2-benzenedicarboxylic acid, di-C6-10-alkyl esters or mixed decyl and hexyl and octyl diesters</xsl:if>
+      <xsl:if test="$id='00132'">Mercury/Mercury Compounds</xsl:if>
+      <xsl:if test="$id='00133'">1,3-propanesultone</xsl:if>
+      <xsl:if test="$id='00134'">2,4-di-tert-butyl-6-(5-chlorobenzotriazol-2-yl)phenol (UV-327)</xsl:if>
+      <xsl:if test="$id='00135'">2-(2H-benzotriazol-2-yl)-4-(tert-butyl)-6-(sec-butyl)phenol (UV-350)</xsl:if>
+      <xsl:if test="$id='00138'">Benzo[a]pyrene</xsl:if>
+      <xsl:if test="$id='00139'">邻苯二甲酸二环己酯</xsl:if>
+      <xsl:if test="$id='00140'">Perfluorononan-1-oic-acid and its sodium and ammonium salts</xsl:if>
+      <xsl:if test="$id='00141'">4,4&apos;-isopropylidenediphenol</xsl:if>
+      <xsl:if test="$id='00142'">Nonadecafluorodecanoic acid (PFDA) and its sodium and ammonium salts</xsl:if>
+      <xsl:if test="$id='00143'">Perfluorohexane-1-sulphonic acid and its salts</xsl:if>
+      <xsl:if test="$id='00144'">Chrysene</xsl:if>
+      <xsl:if test="$id='00145'">Benz[a]anthracene</xsl:if>
+      <xsl:if test="$id='00146'">Cadmium hydroxide</xsl:if>
+      <xsl:if test="$id='00147'">1,6,7,8,9,14,15,16,17,17,18,18-Dodecachloropentacyclo[12.2.1.16,9.02,13.05,10]octadeca-7,15-diene (“Dechlorane Plus”™)</xsl:if>
+      <xsl:if test="$id='00148'">Benzo[ghi]perylene</xsl:if>
+      <xsl:if test="$id='00149'">八甲基环四硅氧烷</xsl:if>
+      <xsl:if test="$id='00150'">十甲基环五硅氧烷</xsl:if>
+      <xsl:if test="$id='00151'">十二甲基环六硅氧烷</xsl:if>
+      <xsl:if test="$id='00152'">氧化硼钠</xsl:if>
+      <xsl:if test="$id='00153'">氢化三联苯</xsl:if>
+      <xsl:if test="$id='00154'">铅</xsl:if>
+    </xsl:if>
+  </xsl:template>
+
+<!--
+##########################################################################################
+		報告用途
+##########################################################################################-->
+  <xsl:template name="getRepotingApplication">
+    <xsl:param name="id" />
+    <xsl:param name="lang" />
+    <xsl:if test="$lang='ja'">
+      <xsl:if test="$id='00001'">全製品</xsl:if>
+      <xsl:if test="$id='00002'">全製品</xsl:if>
+      <xsl:if test="$id='00003'">全製品</xsl:if>
+      <xsl:if test="$id='00004'">織物/皮革製品</xsl:if>
+      <xsl:if test="$id='00005'">全製品</xsl:if>
+      <xsl:if test="$id='00007'">全製品</xsl:if>
+      <xsl:if test="$id='00008'">積層プリント配線基板</xsl:if>
+      <xsl:if test="$id='00009'">積層プリント配線基板を除くプラスチック材料</xsl:if>
+      <xsl:if test="$id='00010'">電池を除く全製品</xsl:if>
+      <xsl:if test="$id='00011'">電池</xsl:if>
+      <xsl:if test="$id='00012'">全製品</xsl:if>
+      <xsl:if test="$id='00013'">全製品</xsl:if>
+      <xsl:if test="$id='00014'">全製品</xsl:if>
+      <xsl:if test="$id='00015'">(a)皮膚と接触することを意図する織物/皮革製品 (b)育児製品 (c)2液性室温硬化モールディングキット(RTV-2シーラントモールディングキット)</xsl:if>
+      <xsl:if test="$id='00016'">全製品</xsl:if>
+      <xsl:if test="$id='00017'">全製品</xsl:if>
+      <xsl:if test="$id='00018'">全製品</xsl:if>
+      <xsl:if test="$id='00019'">織物</xsl:if>
+      <xsl:if test="$id='00020'">全製品</xsl:if>
+      <xsl:if test="$id='00021'">以下を除く全製品。1.電池、2.熱硬化性または熱可塑性のプラスチックで被覆されているケーブル/コードの表面被覆材、3.おもちゃやその他の子供向け製品の塗装または同類の表面被覆</xsl:if>
+      <xsl:if test="$id='00022'">主として12歳以下の子供向けの消費者製品</xsl:if>
+      <xsl:if test="$id='00023'">子供向けの玩具及び製品の塗料又は表面塗装</xsl:if>
+      <xsl:if test="$id='00024'">熱硬化性/熱可塑性樹脂で被覆された電線・ケーブル又はコード</xsl:if>
+      <xsl:if test="$id='00025'">電池</xsl:if>
+      <xsl:if test="$id='00026'">全製品</xsl:if>
+      <xsl:if test="$id='00027'">全製品</xsl:if>
+      <xsl:if test="$id='00028'">全製品</xsl:if>
+      <xsl:if test="$id='00029'">電池を除く全製品</xsl:if>
+      <xsl:if test="$id='00030'">電池</xsl:if>
+      <xsl:if test="$id='00031'">長期間皮膚に接触する可能性のある製品</xsl:if>
+      <xsl:if test="$id='00032'">全製品</xsl:if>
+      <xsl:if test="$id='00033'">全製品</xsl:if>
+      <xsl:if test="$id='00035'">全製品</xsl:if>
+      <xsl:if test="$id='00036'">玩具、または育児製品</xsl:if>
+      <xsl:if test="$id='00037'">子供の口に入る玩具、または育児製品</xsl:if>
+      <xsl:if test="$id='00038'">全製品</xsl:if>
+      <xsl:if test="$id='00039'">全製品</xsl:if>
+      <xsl:if test="$id='00040'">全製品</xsl:if>
+      <xsl:if test="$id='00041'">全製品</xsl:if>
+      <xsl:if test="$id='00042'">全製品</xsl:if>
+      <xsl:if test="$id='00043'">全製品</xsl:if>
+      <xsl:if test="$id='00044'">全製品</xsl:if>
+      <xsl:if test="$id='00045'">全製品</xsl:if>
+      <xsl:if test="$id='00046'">全製品</xsl:if>
+      <xsl:if test="$id='00047'">全製品</xsl:if>
+      <xsl:if test="$id='00048'">全製品</xsl:if>
+      <xsl:if test="$id='00049'">全製品</xsl:if>
+      <xsl:if test="$id='00050'">全製品</xsl:if>
+      <xsl:if test="$id='00051'">全製品</xsl:if>
+      <xsl:if test="$id='00052'">全製品</xsl:if>
+      <xsl:if test="$id='00053'">全製品</xsl:if>
+      <xsl:if test="$id='00054'">全製品</xsl:if>
+      <xsl:if test="$id='00055'">全製品</xsl:if>
+      <xsl:if test="$id='00056'">全製品</xsl:if>
+      <xsl:if test="$id='00057'">全製品</xsl:if>
+      <xsl:if test="$id='00058'">全製品</xsl:if>
+      <xsl:if test="$id='00059'">全製品</xsl:if>
+      <xsl:if test="$id='00060'">全製品</xsl:if>
+      <xsl:if test="$id='00061'">全製品</xsl:if>
+      <xsl:if test="$id='00062'">積層プリント配線基板を除くプラスチック材料</xsl:if>
+      <xsl:if test="$id='00063'">積層プリント配線基板</xsl:if>
+      <xsl:if test="$id='00064'">全製品</xsl:if>
+      <xsl:if test="$id='00065'">全製品</xsl:if>
+      <xsl:if test="$id='00066'">全製品</xsl:if>
+      <xsl:if test="$id='00067'">全製品</xsl:if>
+      <xsl:if test="$id='00068'">全製品</xsl:if>
+      <xsl:if test="$id='00069'">全製品</xsl:if>
+      <xsl:if test="$id='00070'">全製品</xsl:if>
+      <xsl:if test="$id='00071'">全製品</xsl:if>
+      <xsl:if test="$id='00072'">全製品</xsl:if>
+      <xsl:if test="$id='00073'">全製品</xsl:if>
+      <xsl:if test="$id='00074'">全製品</xsl:if>
+      <xsl:if test="$id='00075'">全製品</xsl:if>
+      <xsl:if test="$id='00076'">全製品</xsl:if>
+      <xsl:if test="$id='00077'">全製品</xsl:if>
+      <xsl:if test="$id='00078'">全製品</xsl:if>
+      <xsl:if test="$id='00079'">全製品</xsl:if>
+      <xsl:if test="$id='00080'">全製品</xsl:if>
+      <xsl:if test="$id='00081'">全製品</xsl:if>
+      <xsl:if test="$id='00082'">全製品</xsl:if>
+      <xsl:if test="$id='00083'">全製品</xsl:if>
+      <xsl:if test="$id='00084'">全製品</xsl:if>
+      <xsl:if test="$id='00085'">全製品</xsl:if>
+      <xsl:if test="$id='00086'">全製品</xsl:if>
+      <xsl:if test="$id='00087'">全製品</xsl:if>
+      <xsl:if test="$id='00088'">全製品</xsl:if>
+      <xsl:if test="$id='00089'">全製品</xsl:if>
+      <xsl:if test="$id='00090'">全製品</xsl:if>
+      <xsl:if test="$id='00091'">全製品</xsl:if>
+      <xsl:if test="$id='00092'">全製品</xsl:if>
+      <xsl:if test="$id='00093'">全製品</xsl:if>
+      <xsl:if test="$id='00094'">全製品</xsl:if>
+      <xsl:if test="$id='00095'">全製品</xsl:if>
+      <xsl:if test="$id='00096'">全製品</xsl:if>
+      <xsl:if test="$id='00097'">全製品</xsl:if>
+      <xsl:if test="$id='00098'">全製品</xsl:if>
+      <xsl:if test="$id='00099'">全製品</xsl:if>
+      <xsl:if test="$id='00100'">全製品</xsl:if>
+      <xsl:if test="$id='00102'">全製品</xsl:if>
+      <xsl:if test="$id='00103'">織物および、フィルムまたは紙または印刷用原版用の写真コーティングおよびその他のコートされた消費者製品</xsl:if>
+      <xsl:if test="$id='00104'">織物および、フィルムまたは紙または印刷用原版用の写真コーティングおよびその他のコートされた消費者製品を除く全製品</xsl:if>
+      <xsl:if test="$id='00105'">全製品</xsl:if>
+      <xsl:if test="$id='00106'">全製品</xsl:if>
+      <xsl:if test="$id='00107'">全製品</xsl:if>
+      <xsl:if test="$id='00108'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00109'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00110'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00111'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00112'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00113'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00114'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00115'">玩具と育児製品を除き、直接かつ長期間または反復して皮膚または口腔接触するゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00116'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00117'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00118'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00119'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00120'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00121'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00122'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00123'">直接かつ長期間または反復して皮膚または口腔接触する玩具と育児製品のゴムまたはプラスチック部分</xsl:if>
+      <xsl:if test="$id='00124'">織物またはその他のコートされた材料</xsl:if>
+      <xsl:if test="$id='00125'">織物とその他のコートされた材料を除く全製品</xsl:if>
+      <xsl:if test="$id='00126'">全製品</xsl:if>
+      <xsl:if test="$id='00128'">全製品</xsl:if>
+      <xsl:if test="$id='00129'">全製品</xsl:if>
+      <xsl:if test="$id='00130'">全製品</xsl:if>
+      <xsl:if test="$id='00131'">全製品</xsl:if>
+      <xsl:if test="$id='00132'">電池</xsl:if>
+      <xsl:if test="$id='00133'">全製品</xsl:if>
+      <xsl:if test="$id='00134'">全製品</xsl:if>
+      <xsl:if test="$id='00135'">全製品</xsl:if>
+      <xsl:if test="$id='00138'">全製品</xsl:if>
+      <xsl:if test="$id='00139'">全製品</xsl:if>
+      <xsl:if test="$id='00140'">全製品</xsl:if>
+      <xsl:if test="$id='00141'">全製品</xsl:if>
+      <xsl:if test="$id='00142'">全製品</xsl:if>
+      <xsl:if test="$id='00143'">全製品</xsl:if>
+      <xsl:if test="$id='00144'">全製品</xsl:if>
+      <xsl:if test="$id='00145'">全製品</xsl:if>
+      <xsl:if test="$id='00146'">全製品</xsl:if>
+      <xsl:if test="$id='00147'">全製品</xsl:if>
+      <xsl:if test="$id='00148'">全製品</xsl:if>
+      <xsl:if test="$id='00149'">全製品</xsl:if>
+      <xsl:if test="$id='00150'">全製品</xsl:if>
+      <xsl:if test="$id='00151'">全製品</xsl:if>
+      <xsl:if test="$id='00152'">全製品</xsl:if>
+      <xsl:if test="$id='00153'">全製品</xsl:if>
+      <xsl:if test="$id='00154'">全製品</xsl:if>
+    </xsl:if>
+    <xsl:if test="$lang='en'">
+      <xsl:if test="$id='00001'">All</xsl:if>
+      <xsl:if test="$id='00002'">All</xsl:if>
+      <xsl:if test="$id='00003'">All</xsl:if>
+      <xsl:if test="$id='00004'">Textiles and Leather</xsl:if>
+      <xsl:if test="$id='00005'">All</xsl:if>
+      <xsl:if test="$id='00007'">All</xsl:if>
+      <xsl:if test="$id='00008'">Printed wiring board laminate</xsl:if>
+      <xsl:if test="$id='00009'">Plastic materials except printed wiring board laminates</xsl:if>
+      <xsl:if test="$id='00010'">All, except batteries</xsl:if>
+      <xsl:if test="$id='00011'">Batteries</xsl:if>
+      <xsl:if test="$id='00012'">All</xsl:if>
+      <xsl:if test="$id='00013'">All</xsl:if>
+      <xsl:if test="$id='00014'">All</xsl:if>
+      <xsl:if test="$id='00015'">(a) textile and leather articles intended to come into contact with the skin,,(b) childcare articles,(c) two-component room temperature vulcanisation moulding kits (RTV-2 moulding kits)</xsl:if>
+      <xsl:if test="$id='00016'">All</xsl:if>
+      <xsl:if test="$id='00017'">All</xsl:if>
+      <xsl:if test="$id='00018'">All</xsl:if>
+      <xsl:if test="$id='00019'">Textiles</xsl:if>
+      <xsl:if test="$id='00020'">All</xsl:if>
+      <xsl:if test="$id='00021'">All, except  for: 1. batteries, 2. surface coating material of cables/cords with thermoset or thermoplastic coatings, and 3. paint and similar surface coatings of toys and other articles intended for use by children</xsl:if>
+      <xsl:if test="$id='00022'">Consumer products designed or intended primarily for children 12 years of age or younger</xsl:if>
+      <xsl:if test="$id='00023'">Paint and similar surface coatings of toys and other articles intended for use by children</xsl:if>
+      <xsl:if test="$id='00024'">Cables/cords with thermoset or thermoplastic coatings</xsl:if>
+      <xsl:if test="$id='00025'">Batteries</xsl:if>
+      <xsl:if test="$id='00026'">All</xsl:if>
+      <xsl:if test="$id='00027'">All</xsl:if>
+      <xsl:if test="$id='00028'">All</xsl:if>
+      <xsl:if test="$id='00029'">All, except batteries</xsl:if>
+      <xsl:if test="$id='00030'">Batteries</xsl:if>
+      <xsl:if test="$id='00031'">All, where prolonged skin contact is expected</xsl:if>
+      <xsl:if test="$id='00032'">All</xsl:if>
+      <xsl:if test="$id='00033'">All</xsl:if>
+      <xsl:if test="$id='00035'">All</xsl:if>
+      <xsl:if test="$id='00036'">Children&apos;s toy or child care article</xsl:if>
+      <xsl:if test="$id='00037'">Children&apos;s toy or child care article that can be placed in a child&apos;s mouth</xsl:if>
+      <xsl:if test="$id='00038'">All</xsl:if>
+      <xsl:if test="$id='00039'">All</xsl:if>
+      <xsl:if test="$id='00040'">All</xsl:if>
+      <xsl:if test="$id='00041'">All</xsl:if>
+      <xsl:if test="$id='00042'">All</xsl:if>
+      <xsl:if test="$id='00043'">All</xsl:if>
+      <xsl:if test="$id='00044'">All</xsl:if>
+      <xsl:if test="$id='00045'">All</xsl:if>
+      <xsl:if test="$id='00046'">All</xsl:if>
+      <xsl:if test="$id='00047'">All</xsl:if>
+      <xsl:if test="$id='00048'">All</xsl:if>
+      <xsl:if test="$id='00049'">All</xsl:if>
+      <xsl:if test="$id='00050'">All</xsl:if>
+      <xsl:if test="$id='00051'">All</xsl:if>
+      <xsl:if test="$id='00052'">All</xsl:if>
+      <xsl:if test="$id='00053'">All</xsl:if>
+      <xsl:if test="$id='00054'">All</xsl:if>
+      <xsl:if test="$id='00055'">All</xsl:if>
+      <xsl:if test="$id='00056'">All</xsl:if>
+      <xsl:if test="$id='00057'">All</xsl:if>
+      <xsl:if test="$id='00058'">All</xsl:if>
+      <xsl:if test="$id='00059'">All</xsl:if>
+      <xsl:if test="$id='00060'">All</xsl:if>
+      <xsl:if test="$id='00061'">All</xsl:if>
+      <xsl:if test="$id='00062'">Plastic materials except printed wiring board laminates</xsl:if>
+      <xsl:if test="$id='00063'">Printed Wiring Board (PWB) Laminates</xsl:if>
+      <xsl:if test="$id='00064'">All</xsl:if>
+      <xsl:if test="$id='00065'">All</xsl:if>
+      <xsl:if test="$id='00066'">All</xsl:if>
+      <xsl:if test="$id='00067'">All</xsl:if>
+      <xsl:if test="$id='00068'">All</xsl:if>
+      <xsl:if test="$id='00069'">All</xsl:if>
+      <xsl:if test="$id='00070'">All</xsl:if>
+      <xsl:if test="$id='00071'">All</xsl:if>
+      <xsl:if test="$id='00072'">All</xsl:if>
+      <xsl:if test="$id='00073'">All</xsl:if>
+      <xsl:if test="$id='00074'">All</xsl:if>
+      <xsl:if test="$id='00075'">All</xsl:if>
+      <xsl:if test="$id='00076'">All</xsl:if>
+      <xsl:if test="$id='00077'">All</xsl:if>
+      <xsl:if test="$id='00078'">All</xsl:if>
+      <xsl:if test="$id='00079'">All</xsl:if>
+      <xsl:if test="$id='00080'">All</xsl:if>
+      <xsl:if test="$id='00081'">All</xsl:if>
+      <xsl:if test="$id='00082'">All</xsl:if>
+      <xsl:if test="$id='00083'">All</xsl:if>
+      <xsl:if test="$id='00084'">All</xsl:if>
+      <xsl:if test="$id='00085'">All</xsl:if>
+      <xsl:if test="$id='00086'">All</xsl:if>
+      <xsl:if test="$id='00087'">All</xsl:if>
+      <xsl:if test="$id='00088'">All</xsl:if>
+      <xsl:if test="$id='00089'">All</xsl:if>
+      <xsl:if test="$id='00090'">All</xsl:if>
+      <xsl:if test="$id='00091'">All</xsl:if>
+      <xsl:if test="$id='00092'">All</xsl:if>
+      <xsl:if test="$id='00093'">All</xsl:if>
+      <xsl:if test="$id='00094'">All</xsl:if>
+      <xsl:if test="$id='00095'">All</xsl:if>
+      <xsl:if test="$id='00096'">All</xsl:if>
+      <xsl:if test="$id='00097'">All</xsl:if>
+      <xsl:if test="$id='00098'">All</xsl:if>
+      <xsl:if test="$id='00099'">All</xsl:if>
+      <xsl:if test="$id='00100'">All</xsl:if>
+      <xsl:if test="$id='00102'">All</xsl:if>
+      <xsl:if test="$id='00103'">Textiles, photographic coatings applied to films, paper or printing plates and other coated consumer products.</xsl:if>
+      <xsl:if test="$id='00104'">All except textiles, photographic coatings applied to films, paper or printing plates and other coated consumer products.</xsl:if>
+      <xsl:if test="$id='00105'">All</xsl:if>
+      <xsl:if test="$id='00106'">All</xsl:if>
+      <xsl:if test="$id='00107'">All</xsl:if>
+      <xsl:if test="$id='00108'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00109'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00110'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00111'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00112'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00113'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00114'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00115'">Rubber or plastic parts that come into direct, prolonged or repetitive skin or oral cavity contact except those for toys or childcare articles</xsl:if>
+      <xsl:if test="$id='00116'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00117'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00118'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00119'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00120'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00121'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00122'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00123'">Rubber or plastic parts of toys and childcare articles that come into direct, prolonged or repetitive skin or oral cavity contact</xsl:if>
+      <xsl:if test="$id='00124'">Textiles or other coated materials.</xsl:if>
+      <xsl:if test="$id='00125'">All except textiles or other coated materials.</xsl:if>
+      <xsl:if test="$id='00126'">All</xsl:if>
+      <xsl:if test="$id='00128'">All</xsl:if>
+      <xsl:if test="$id='00129'">All</xsl:if>
+      <xsl:if test="$id='00130'">All</xsl:if>
+      <xsl:if test="$id='00131'">All</xsl:if>
+      <xsl:if test="$id='00132'">Batteries</xsl:if>
+      <xsl:if test="$id='00133'">All</xsl:if>
+      <xsl:if test="$id='00134'">All</xsl:if>
+      <xsl:if test="$id='00135'">All</xsl:if>
+      <xsl:if test="$id='00138'">All</xsl:if>
+      <xsl:if test="$id='00139'">All</xsl:if>
+      <xsl:if test="$id='00140'">All</xsl:if>
+      <xsl:if test="$id='00141'">All</xsl:if>
+      <xsl:if test="$id='00142'">All</xsl:if>
+      <xsl:if test="$id='00143'">All</xsl:if>
+      <xsl:if test="$id='00144'">All</xsl:if>
+      <xsl:if test="$id='00145'">All</xsl:if>
+      <xsl:if test="$id='00146'">All</xsl:if>
+      <xsl:if test="$id='00147'">All</xsl:if>
+      <xsl:if test="$id='00148'">All</xsl:if>
+      <xsl:if test="$id='00149'">All</xsl:if>
+      <xsl:if test="$id='00150'">All</xsl:if>
+      <xsl:if test="$id='00151'">All</xsl:if>
+      <xsl:if test="$id='00152'">All</xsl:if>
+      <xsl:if test="$id='00153'">All</xsl:if>
+      <xsl:if test="$id='00154'">All</xsl:if>
+    </xsl:if>
+    <xsl:if test="$lang='zh'">
+      <xsl:if test="$id='00001'">所有产品</xsl:if>
+      <xsl:if test="$id='00002'">所有产品</xsl:if>
+      <xsl:if test="$id='00003'">所有产品</xsl:if>
+      <xsl:if test="$id='00004'">纺织品/皮革产品</xsl:if>
+      <xsl:if test="$id='00005'">所有产品</xsl:if>
+      <xsl:if test="$id='00007'">所有产品</xsl:if>
+      <xsl:if test="$id='00008'">层压印刷电路板</xsl:if>
+      <xsl:if test="$id='00009'">除层压印刷电路板以外的塑料材料</xsl:if>
+      <xsl:if test="$id='00010'">除电池以外的所有产品</xsl:if>
+      <xsl:if test="$id='00011'">电池</xsl:if>
+      <xsl:if test="$id='00012'">所有产品</xsl:if>
+      <xsl:if test="$id='00013'">所有产品</xsl:if>
+      <xsl:if test="$id='00014'">所有产品</xsl:if>
+      <xsl:if test="$id='00015'">(a)有意与皮肤接触的纺织品/皮革产品;(b)育儿产品;(c)两液混合型室温固化成型套件(RTV-2双组份液体硅胶)</xsl:if>
+      <xsl:if test="$id='00016'">所有产品</xsl:if>
+      <xsl:if test="$id='00017'">所有产品</xsl:if>
+      <xsl:if test="$id='00018'">所有产品</xsl:if>
+      <xsl:if test="$id='00019'">纺织品</xsl:if>
+      <xsl:if test="$id='00020'">所有产品</xsl:if>
+      <xsl:if test="$id='00021'">除下列产品以外的所有产品。1.电池;2.带有热硬化性或热可塑性塑料表面覆层的电缆/电线;3.玩具及面向儿童的产品的涂层或表面覆层</xsl:if>
+      <xsl:if test="$id='00022'">主要面向12岁以下儿童的日用品</xsl:if>
+      <xsl:if test="$id='00023'">面向儿童的产品及玩具的涂料或表面涂层</xsl:if>
+      <xsl:if test="$id='00024'">带有热硬化性或热可塑性塑料表面覆层的电缆/电线</xsl:if>
+      <xsl:if test="$id='00025'">电池</xsl:if>
+      <xsl:if test="$id='00026'">所有产品</xsl:if>
+      <xsl:if test="$id='00027'">所有产品</xsl:if>
+      <xsl:if test="$id='00028'">所有产品</xsl:if>
+      <xsl:if test="$id='00029'">除电池以外的所有产品</xsl:if>
+      <xsl:if test="$id='00030'">电池</xsl:if>
+      <xsl:if test="$id='00031'">可能长时间接触皮肤的产品</xsl:if>
+      <xsl:if test="$id='00032'">所有产品</xsl:if>
+      <xsl:if test="$id='00033'">所有产品</xsl:if>
+      <xsl:if test="$id='00035'">所有产品</xsl:if>
+      <xsl:if test="$id='00036'">玩具或育儿产品</xsl:if>
+      <xsl:if test="$id='00037'">可放入儿童嘴中的玩具或育儿产品</xsl:if>
+      <xsl:if test="$id='00038'">所有产品</xsl:if>
+      <xsl:if test="$id='00039'">所有产品</xsl:if>
+      <xsl:if test="$id='00040'">所有产品</xsl:if>
+      <xsl:if test="$id='00041'">所有产品</xsl:if>
+      <xsl:if test="$id='00042'">所有产品</xsl:if>
+      <xsl:if test="$id='00043'">所有产品</xsl:if>
+      <xsl:if test="$id='00044'">所有产品</xsl:if>
+      <xsl:if test="$id='00045'">所有产品</xsl:if>
+      <xsl:if test="$id='00046'">所有产品</xsl:if>
+      <xsl:if test="$id='00047'">所有产品</xsl:if>
+      <xsl:if test="$id='00048'">所有产品</xsl:if>
+      <xsl:if test="$id='00049'">所有产品</xsl:if>
+      <xsl:if test="$id='00050'">所有产品</xsl:if>
+      <xsl:if test="$id='00051'">所有产品</xsl:if>
+      <xsl:if test="$id='00052'">所有产品</xsl:if>
+      <xsl:if test="$id='00053'">所有产品</xsl:if>
+      <xsl:if test="$id='00054'">所有产品</xsl:if>
+      <xsl:if test="$id='00055'">所有产品</xsl:if>
+      <xsl:if test="$id='00056'">所有产品</xsl:if>
+      <xsl:if test="$id='00057'">所有产品</xsl:if>
+      <xsl:if test="$id='00058'">所有产品</xsl:if>
+      <xsl:if test="$id='00059'">所有产品</xsl:if>
+      <xsl:if test="$id='00060'">所有产品</xsl:if>
+      <xsl:if test="$id='00061'">所有产品</xsl:if>
+      <xsl:if test="$id='00062'">除层压印刷电路板以外的塑料材料</xsl:if>
+      <xsl:if test="$id='00063'">层压印刷电路板</xsl:if>
+      <xsl:if test="$id='00064'">所有产品</xsl:if>
+      <xsl:if test="$id='00065'">所有产品</xsl:if>
+      <xsl:if test="$id='00066'">所有产品</xsl:if>
+      <xsl:if test="$id='00067'">所有产品</xsl:if>
+      <xsl:if test="$id='00068'">所有产品</xsl:if>
+      <xsl:if test="$id='00069'">所有产品</xsl:if>
+      <xsl:if test="$id='00070'">所有产品</xsl:if>
+      <xsl:if test="$id='00071'">所有产品</xsl:if>
+      <xsl:if test="$id='00072'">所有产品</xsl:if>
+      <xsl:if test="$id='00073'">所有产品</xsl:if>
+      <xsl:if test="$id='00074'">所有产品</xsl:if>
+      <xsl:if test="$id='00075'">所有产品</xsl:if>
+      <xsl:if test="$id='00076'">所有产品</xsl:if>
+      <xsl:if test="$id='00077'">所有产品</xsl:if>
+      <xsl:if test="$id='00078'">所有产品</xsl:if>
+      <xsl:if test="$id='00079'">所有产品</xsl:if>
+      <xsl:if test="$id='00080'">所有产品</xsl:if>
+      <xsl:if test="$id='00081'">所有产品</xsl:if>
+      <xsl:if test="$id='00082'">所有产品</xsl:if>
+      <xsl:if test="$id='00083'">所有产品</xsl:if>
+      <xsl:if test="$id='00084'">所有产品</xsl:if>
+      <xsl:if test="$id='00085'">所有产品</xsl:if>
+      <xsl:if test="$id='00086'">所有产品</xsl:if>
+      <xsl:if test="$id='00087'">所有产品</xsl:if>
+      <xsl:if test="$id='00088'">所有产品</xsl:if>
+      <xsl:if test="$id='00089'">所有产品</xsl:if>
+      <xsl:if test="$id='00090'">所有产品</xsl:if>
+      <xsl:if test="$id='00091'">所有产品</xsl:if>
+      <xsl:if test="$id='00092'">所有产品</xsl:if>
+      <xsl:if test="$id='00093'">所有产品</xsl:if>
+      <xsl:if test="$id='00094'">所有产品</xsl:if>
+      <xsl:if test="$id='00095'">所有产品</xsl:if>
+      <xsl:if test="$id='00096'">所有产品</xsl:if>
+      <xsl:if test="$id='00097'">所有产品</xsl:if>
+      <xsl:if test="$id='00098'">所有产品</xsl:if>
+      <xsl:if test="$id='00099'">所有产品</xsl:if>
+      <xsl:if test="$id='00100'">所有产品</xsl:if>
+      <xsl:if test="$id='00102'">所有产品</xsl:if>
+      <xsl:if test="$id='00103'">用于纺织品或胶卷、纸及印刷底板的摄影涂料,以及其他带有覆层的日用品</xsl:if>
+      <xsl:if test="$id='00104'">除用于纺织品或胶卷、纸及印刷底板的摄影涂料,以及其他带有覆层的日用品以外的所有产品</xsl:if>
+      <xsl:if test="$id='00105'">所有产品</xsl:if>
+      <xsl:if test="$id='00106'">所有产品</xsl:if>
+      <xsl:if test="$id='00107'">所有产品</xsl:if>
+      <xsl:if test="$id='00108'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00109'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00110'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00111'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00112'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00113'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00114'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00115'">除玩具或育儿产品以外,直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00116'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00117'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00118'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00119'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00120'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00121'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00122'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00123'">玩具或育児产品中直接且长期或短期反复接触皮肤或口腔的橡胶或塑料部分</xsl:if>
+      <xsl:if test="$id='00124'">纺织品或其他覆层材料</xsl:if>
+      <xsl:if test="$id='00125'">除纺织品或其他覆层材料以外的所有产品</xsl:if>
+      <xsl:if test="$id='00126'">所有产品</xsl:if>
+      <xsl:if test="$id='00128'">所有产品</xsl:if>
+      <xsl:if test="$id='00129'">所有产品</xsl:if>
+      <xsl:if test="$id='00130'">所有产品</xsl:if>
+      <xsl:if test="$id='00131'">所有产品</xsl:if>
+      <xsl:if test="$id='00132'">电池</xsl:if>
+      <xsl:if test="$id='00133'">所有产品</xsl:if>
+      <xsl:if test="$id='00134'">所有产品</xsl:if>
+      <xsl:if test="$id='00135'">所有产品</xsl:if>
+      <xsl:if test="$id='00138'">所有产品</xsl:if>
+      <xsl:if test="$id='00139'">所有产品</xsl:if>
+      <xsl:if test="$id='00140'">所有产品</xsl:if>
+      <xsl:if test="$id='00141'">所有产品</xsl:if>
+      <xsl:if test="$id='00142'">所有产品</xsl:if>
+      <xsl:if test="$id='00143'">所有产品</xsl:if>
+      <xsl:if test="$id='00144'">所有产品</xsl:if>
+      <xsl:if test="$id='00145'">所有产品</xsl:if>
+      <xsl:if test="$id='00146'">所有产品</xsl:if>
+      <xsl:if test="$id='00147'">所有产品</xsl:if>
+      <xsl:if test="$id='00148'">所有产品</xsl:if>
+      <xsl:if test="$id='00149'">所有产品</xsl:if>
+      <xsl:if test="$id='00150'">所有产品</xsl:if>
+      <xsl:if test="$id='00151'">所有产品</xsl:if>
+      <xsl:if test="$id='00152'">所有产品</xsl:if>
+      <xsl:if test="$id='00153'">所有产品</xsl:if>
+      <xsl:if test="$id='00154'">所有产品</xsl:if>
+    </xsl:if>
+  </xsl:template>
+
+<!--
+##########################################################################################
+		報告閾値
+##########################################################################################-->
+  <xsl:template name="getRepotingThreshold">
+    <xsl:param name="id" />
+    <xsl:param name="lang" />
+    <xsl:if test="$lang='ja'">
+      <xsl:if test="$id='00001'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00002'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00003'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00004'">生成アミンが仕上がり織物/皮革製品の0.003重量%(30ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00005'">0.1重量%(1000ppm) [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00007'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00008'">基板中の臭素の含有合計で0.09重量%(900ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00009'">プラスチック材料中の臭素として0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00010'">均質材料中のカドミウムの0.01重量%(100ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00011'">電池中のカドミウムの0.001重量%(10ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00012'">均質材料中の六価クロムの0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00013'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00014'">部品中のスズの0.1重量%(1000ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00015'">部品中のスズの0.1重量%(1000ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00016'">部品中の0.00001重量%(0.1ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00017'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00018'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00019'">織物製品の0.0075重量%(75ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00020'">意図的添加または0.01重量%(100ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00021'">均質材料中の鉛の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00022'">製品中の鉛の0.01重量%(100ppm) [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00023'">表面塗装中の鉛の0.009重量%(90ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00024'">表面被覆材中の鉛の0.03重量%(300ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00025'">電池中の鉛の0.004重量%(40ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00026'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00027'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00028'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00029'">意図的添加または均質材料の水銀の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00030'">意図的添加または電池中の水銀の0.0001重量%(1ppm) [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00031'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00032'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00033'">電池または構成部品の6E-7重量% [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00035'">意図的添加または0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00036'">フタル酸エステルの合計として可塑化した材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00037'">可塑化した材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00038'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00039'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00040'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00041'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00042'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00043'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00044'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00045'">均質材料の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00046'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00047'">材料の0.005重量% [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00048'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00049'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00050'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00051'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00052'">意図的添加または0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00053'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00054'">意図的添加または0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00055'">意図的添加またはスズ元素としての、部品中の0.1重量% [報告レベル:部品]</xsl:if>
+      <xsl:if test="$id='00056'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00057'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00058'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00059'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00060'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00061'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00062'">プラスチック材料中の塩素の0.1重量%(1000ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00063'">基板中塩素の含有合計で0.09重量%(900ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00064'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00065'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00066'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00067'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00068'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00069'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00070'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00071'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00072'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00073'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00074'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00075'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00076'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00077'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00078'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00079'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00080'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00081'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00082'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00083'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00084'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00085'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00086'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00087'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00088'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00089'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00090'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00091'">意図的添加または0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00092'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00093'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00094'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00095'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00096'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00097'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00098'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00099'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00100'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00102'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00103'">1μg/m2(PFOAの合計として) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00104'">部品中0.1%(PFOAの合計として) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00105'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00106'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00107'">意図的添加 [報告レベル:製品]</xsl:if>
+      <xsl:if test="$id='00108'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00109'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00110'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00111'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00112'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00113'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00114'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00115'">プラスチックまたはゴム部品の0.0001重量%(1ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00116'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00117'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00118'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00119'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00120'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00121'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00122'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00123'">プラスチックまたはゴム部品の0.00005重量%(0.5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00124'">意図的添加またはコートされた材料の1μg/m2 [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00125'">意図的添加または部品中の0.1重量%(1000ppm)(PFOSの合計として) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00126'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00128'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00129'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00130'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00131'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00132'">均質材料中の水銀の0.0005重量%(5ppm) [報告レベル:材料]</xsl:if>
+      <xsl:if test="$id='00133'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00134'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00135'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00138'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00139'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00140'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00141'">意図的添加または0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00142'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00143'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00144'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00145'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00146'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00147'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00148'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00149'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00150'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00151'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00152'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00153'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+      <xsl:if test="$id='00154'">0.1重量%(1000ppm) [報告レベル:成形品]</xsl:if>
+    </xsl:if>
+    <xsl:if test="$lang='en'">
+      <xsl:if test="$id='00001'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00002'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00003'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00004'">0.003% by weight of the finished textile/leather product [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00005'">0.1 mass% [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00007'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00008'">0.09 mass% total bromine content in laminate [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00009'">0.1 mass% of bromine in plastic materials [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00010'">0.01 mass% of total Cd in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00011'">0.001% by weight of battery [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00012'">0.1 mass% of total Cr+6 in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00013'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00014'">0.1 mass% of tin in the part [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00015'">0.1 mass% of tin in the part [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00016'">0.00001 mass%  of the part [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00017'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00018'">Intentionally Added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00019'">0.0075 mass % of textile [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00020'">Intentionally added or 0.01 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00021'">0.1 mass% of total Pb in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00022'">0.01 mass% [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00023'">0.009 mass% of surface coating material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00024'">0.03 mass% of surface coating material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00025'">0.004 mass% of battery [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00026'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00027'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00028'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00029'">Intentionally Added or 0.1 mass% of total Hg in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00030'">Intentionally added or 0.0001 mass% of battery [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00031'">Intentionally Added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00032'">Intentionally Added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00033'">6 x 10 ^-7 mass% of battery or product part [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00035'">Intentionally added or 0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00036'">0.1 mass% as the sum of the phthalate concentrations  in plasticized material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00037'">0.1 mass% as the sum of the phthalate concentrations in plasticized material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00038'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00039'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00040'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00041'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00042'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00043'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00044'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00045'">0.1 mass% in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00046'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00047'">0.005 mass% in material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00048'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00049'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00050'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00051'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00052'">Intentionally added or 0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00053'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00054'">Intentionally added or 0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00055'">Intentionally added or 0.1 mass% of tin in the part [ReportingLevel:Product Part]</xsl:if>
+      <xsl:if test="$id='00056'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00057'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00058'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00059'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00060'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00061'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00062'">0.1 mass% chlorine in plastic materials [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00063'">0.09 mass% total chlorine content in laminate [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00064'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00065'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00066'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00067'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00068'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00069'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00070'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00071'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00072'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00073'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00074'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00075'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00076'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00077'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00078'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00079'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00080'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00081'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00082'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00083'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00084'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00085'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00086'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00087'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00088'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00089'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00090'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00091'">Intentionally added or 0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00092'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00093'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00094'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00095'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00096'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00097'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00098'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00099'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00100'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00102'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00103'">1 microgram/m2 (as the sum of PFOA) [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00104'">0.1 mass% of the part (as the sum of PFOA) [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00105'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00106'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00107'">Intentionally added [ReportingLevel:Product]</xsl:if>
+      <xsl:if test="$id='00108'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00109'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00110'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00111'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00112'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00113'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00114'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00115'">0.0001 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00116'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00117'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00118'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00119'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00120'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00121'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00122'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00123'">0.00005 mass% of the plastic or rubber part [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00124'">Intentionally added or 1 microgram/m2 of coated material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00125'">Intentionally added or 0.1 mass% of the part (as the sum of PFOS) [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00126'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00128'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00129'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00130'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00131'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00132'">0.0005 mass% of total Hg in homogenous material [ReportingLevel:Material]</xsl:if>
+      <xsl:if test="$id='00133'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00134'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00135'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00138'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00139'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00140'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00141'">Intentionally added or 0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00142'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00143'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00144'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00145'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00146'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00147'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00148'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00149'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00150'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00151'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00152'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00153'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+      <xsl:if test="$id='00154'">0.1 mass% of article [ReportingLevel:Article]</xsl:if>
+    </xsl:if>
+    <xsl:if test="$lang='zh'">
+      <xsl:if test="$id='00001'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00002'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00003'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00004'">成品纺织品/皮革产品中的胺的0.003重量%(30ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00005'">0.1重量%(1000ppm) [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00007'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00008'">基板中溴的总含量的0.09重量%(900ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00009'">塑料材料中溴的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00010'">均质材料中镉的0.01重量%(100ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00011'">电池中镉的0.001重量%(10ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00012'">均质材料中六价铬的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00013'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00014'">零部件中锡的0.1重量%(1000ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00015'">零部件中锡的0.1重量%(1000ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00016'">零部件的0.00001重量%(0.1ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00017'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00018'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00019'">纺织品产品的0.0075重量%(75ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00020'">有意添加或0.01重量%(100ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00021'">均质材料中铅的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00022'">产品中铅的0.01重量%(100ppm) [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00023'">表面涂层中铅的0.009重量%(90ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00024'">表面覆层中铅的0.03重量%(300ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00025'">电池中铅的0.004重量%(40ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00026'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00027'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00028'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00029'">有意添加或均质材料中汞的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00030'">有意添加或电池中汞的0.0001重量%(1ppm) [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00031'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00032'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00033'">电池或组成零件的6E-7重量% [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00035'">有意添加或0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00036'">可塑化材料中邻苯二甲酸酯总含量的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00037'">可塑化材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00038'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00039'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00040'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00041'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00042'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00043'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00044'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00045'">均质材料的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00046'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00047'">材料的0.005重量% [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00048'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00049'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00050'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00051'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00052'">有意添加或0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00053'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00054'">有意添加或0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00055'">有意添加或零部件中的0.1重量% [申报级别:零部件]</xsl:if>
+      <xsl:if test="$id='00056'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00057'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00058'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00059'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00060'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00061'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00062'">塑料材料中氯的0.1重量%(1000ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00063'">基板中氯的总含量的0.09重量%(900ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00064'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00065'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00066'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00067'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00068'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00069'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00070'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00071'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00072'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00073'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00074'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00075'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00076'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00077'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00078'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00079'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00080'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00081'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00082'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00083'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00084'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00085'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00086'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00087'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00088'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00089'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00090'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00091'">有意添加或0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00092'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00093'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00094'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00095'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00096'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00097'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00098'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00099'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00100'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00102'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00103'">1μg/m2(PFOA总和) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00104'">零部件中0.1%(PFOA总和) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00105'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00106'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00107'">有意添加 [申报级别:产品]</xsl:if>
+      <xsl:if test="$id='00108'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00109'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00110'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00111'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00112'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00113'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00114'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00115'">塑料或橡胶零部件的0.0001重量%(1ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00116'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00117'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00118'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00119'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00120'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00121'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00122'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00123'">塑料或橡胶零部件的0.00005重量%(0.5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00124'">有意添加或覆层材料的1μg/m2 [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00125'">有意添加或零部件中的0.1重量%(1000ppm)(PFOS总和) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00126'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00128'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00129'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00130'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00131'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00132'">均质材料中汞的0.0005重量%(5ppm) [申报级别:材料]</xsl:if>
+      <xsl:if test="$id='00133'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00134'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00135'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00138'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00139'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00140'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00141'">有意添加或0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00142'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00143'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00144'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00145'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00146'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00147'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00148'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00149'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00150'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00151'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00152'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00153'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
+      <xsl:if test="$id='00154'">0.1重量%(1000ppm) [申报级别:物品]</xsl:if>
     </xsl:if>
   </xsl:template>
 
