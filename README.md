@@ -18,6 +18,10 @@
 
 [オンライン版](https://satoshitajima005.github.io/SREC-Viewer-Web/)も公開しました
 
+### TODO
+- 引数ファイルに未対応(ファイル関連付けが出来ない)
+- nw-builder 0.42.6-osx64 のみパッケージングができない(パッケージング用のファイルにUnhandledPromiseRejectionWarningがある？)
+
 ### 使い方
 開発環境には[NW.js](https://nwjs.io/)を使用しているので、
  - [公式ドキュメント](http://docs.nwjs.io/en/latest/For%20Users/Package%20and%20Distribute/)
