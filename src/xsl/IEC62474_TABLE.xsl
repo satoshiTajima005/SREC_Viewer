@@ -1,206 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" encoding="UTF-8" indent="no" omit-xml-declaration="no" />
-  <xsl:template match="Main">
-    {
-      <xsl:apply-templates select="Product" />
-    }
-  </xsl:template>
+
   <!--####################################### 製品 #######################################-->
-  <xsl:template match="Product">
-    "isOpen": true,
-		"type": "product",
-    "name": "<xsl:value-of select="concat(ProductID/@identifier, ' ', ProductID/@name)" />",
-    "children":[
-      <xsl:apply-templates select="./ProductPart" />
-      <xsl:apply-templates select="./MaterialClass" />
-      <xsl:apply-templates select="./Material" />
-      <xsl:apply-templates select="./Composition/ProductPart" />
-      <xsl:apply-templates select="./Composition/MaterialClass" />
-      <xsl:apply-templates select="./Composition/Material" />
-    ]
-  </xsl:template>
-  <!--####################################### 部品 #######################################-->
-  <xsl:template match="ProductPart">
+  <xsl:template match="Main/Product">
     {
-      "isOpen": true,
-		  "type": "parts",
-      "name": "<xsl:value-of select="concat(ProductID/@identifier, ' ', ProductID/@name, ' [', @numberOfUnits, 'pcs]')" />",
-		  "props":[
-        {"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
-        {"name":"員数", "class":"numberOfUnits", "value":"<xsl:value-of select="@numberOfUnits" />"},
-        {"name":"発行日", "class":"effectiveDate", "value":"<xsl:value-of select="ProductID/@effectiveDate" />"},
-        {"name":"ID", "class":"identifier", "value":"<xsl:value-of select="ProductID/@identifier" />"},
-        {"name":"名称", "class":"name", "value":"<xsl:value-of select="ProductID/@name" />"},
-        {"name":"依頼者品番", "class":"requesterName", "value":"<xsl:value-of select="ProductID/@requesterName" />"},
-        {"name":"依頼者型番", "class":"requesterIdentifier", "value":"<xsl:value-of select="ProductID/@requesterIdentifier" />"},
-        {"name":"製造場所", "class":"manufacturingSite", "value":"<xsl:value-of select="ProductID/@manufacturingSite" />"},
-        {"name":"バージョン", "class":"version", "value":"<xsl:value-of select="ProductID/@version" />"},
-        {"name":"質量", "class":"mass", "value":"<xsl:value-of select="ProductID/Mass/@mass" /><xsl:value-of select="ProductID/Mass/@unitOfMeasure" />"}
-        <!--
-        {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="ProductID/Mass/@positiveTolerance" />"},
-        {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="ProductID/Mass/@negativeTolerance" />"},
-        {"name":"", "class":"massPercent", "value":"<xsl:value-of select="ProductID/MassPercent/@massPercent" />"},
-        {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="ProductID/MassPercent/@positiveTolerance" />"},
-        {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="ProductID/MassPercent/@negativeTolerance" />"
-        -->
+      "over": [
+        <xsl:apply-templates select="./Substance[Threshold/@aboveThresholdLevel='true']" />  <!--V1-->
+        <xsl:apply-templates select="./SubstanceGroup[Threshold/@aboveThresholdLevel='true']" /><!--V1-->
+        <xsl:apply-templates select="./Compliance/DsDsg[ComplianceThreshold/@aboveComplianceThreshold='true']" /><!--V2-->
+      ],
+      "lower": [
+        <xsl:apply-templates select="./Substance[Threshold/@aboveThresholdLevel='false']" />  <!--V1-->
+        <xsl:apply-templates select="./SubstanceGroup[Threshold/@aboveThresholdLevel='false']" /><!--V1-->
+        <xsl:apply-templates select="./Compliance/DsDsg[ComplianceThreshold/@aboveComplianceThreshold='false']" /><!--V2-->
       ]
-      <xsl:if test="count(./ProductPart)+count(./MaterialClass)+count(./Material)+count(./SubstanceGroup)+count(./Substance)!=0">
-        ,"children":[
-          <xsl:apply-templates select="./ProductPart" />
-          <xsl:apply-templates select="./MaterialClass" />
-          <xsl:apply-templates select="./Material" />
-          <xsl:apply-templates select="./SubstanceGroup" />
-          <xsl:apply-templates select="./Substance" />
-        ]
-      </xsl:if>
-    }
-  </xsl:template>
-  <!--####################################### 材質区分 #######################################-->
-  <xsl:template match="MaterialClass">
-    {
-      "isOpen": true,
-		  "type": "material",
-      "name": "<xsl:value-of select="@name" />",
-		  "props":[
-        {"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
-        {"name":"ID", "class":"id", "value":"<xsl:value-of select="@id" />"},
-        {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
-        {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"}
-        <!--
-        {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
-        {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
-        {"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
-        {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />"},
-        {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />"},
-        -->
-      ]
-      <xsl:if test="count(./Material)+count(./SubstanceGroup)+count(./Substance)!=0">
-        ,"children":[
-          <xsl:apply-templates select="./Material" />
-          <xsl:apply-templates select="./SubstanceGroup" />
-          <xsl:apply-templates select="./Substance" />
-        ]
-      </xsl:if>
-    }
-  </xsl:template>
-  <!--####################################### 材質 #######################################-->
-  <xsl:template match="Material">
-    {
-      "isOpen": true,
-		  "type": "material",
-      "name": "<xsl:value-of select="@name" />",
-		  "props":[
-        {"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
-        {"name":"ID", "class":"materialClassID", "value":"<xsl:value-of select="MaterialClassID/EntryID/@entryIdentity" />"},
-        {"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
-        {"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
-        <!--
-        {"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />"},
-        {"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />"},
-        {"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />"},
-        {"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />"},
-        {"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />"},
-        -->
-        {"name":"", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
-        {"name":"", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
-      ]
-      <xsl:if test="count(./SubstanceGroup)+count(./Substance)!=0">
-        ,"children":[
-          <xsl:apply-templates select="./SubstanceGroup" />
-          <xsl:apply-templates select="./Substance" />
-        ]
-      </xsl:if>
     }
   </xsl:template>
 
-   	<!--####################################### 物質群 #######################################-->
-	<xsl:template match="SubstanceGroup">
-    {
-      "isOpen": true,
-		  "type": "substance",
-      "name":"<xsl:value-of select="@name" />",
-		  "props":[
-				{"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
-				{"name":"使用内容", "class":"descriptionOfUse", "value":"<xsl:value-of select="@descriptionOfUse" />"},
-				{"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
-        {"name":"日本語名", "class":"jname", "value":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"},        
-				{"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
-        <!--
-				{"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />
-				{"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />
-				{"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />
-				{"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />
-				{"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />
-				{"name":"", "class":"matMassPercent", "value":"<xsl:value-of select="MatMassPercent/@massPercent" />
-				{"name":"", "class":"matPercentPlusTolerance", "value":"<xsl:value-of select="MatMassPercent/@positiveTolerance" />
-				{"name":"", "class":"matPercentMinusTolerance", "value":"<xsl:value-of select="MatMassPercent/@negativeTolerance" />
-        -->
-				{"name":"閾値レベル", "class":"aboveThresholdLevel", "value":"<xsl:value-of select="Threshold/@aboveThresholdLevel" />"},
-				{"name":"報告用途", "class":"reportableApplication", "value":"<xsl:value-of select="Threshold/@reportableApplication" />"},
-				{"name":"報告閾値", "class":"reportingThreshold", "value":"<xsl:value-of select="Threshold/@reportingThreshold" />"},
-				{"name":"機関", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
-				{"name":"ID", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
-      ]
-      <xsl:if test="count(./Exemptions)+count(./Substance)!=0">
-        ,"children":[
-          <xsl:apply-templates select="./Substance" />
-          <xsl:apply-templates select="./Exemptions" />
-        ]
-      </xsl:if>
-    }
-	</xsl:template>
-
- 	<!--####################################### 物質 #######################################-->
+  <!--####################################### 物質 V1 #######################################-->
 	<xsl:template match="Substance">
     {
-      "isOpen": true,
-		  "type": "substance",
-      "name":"<xsl:value-of select="@name" />",
-		  "props":[
-				{"name":"備考", "class":"comment", "value":"<xsl:value-of select="@comment" />"},
-				{"name":"使用内容", "class":"descriptionOfUse", "value":"<xsl:value-of select="@descriptionOfUse" />"},
-				{"name":"名称", "class":"name", "value":"<xsl:value-of select="@name" />"},
-        {"name":"日本語名", "class":"jname", "value":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"},
-				{"name":"質量", "class":"mass", "value":"<xsl:value-of select="Mass/@mass" /><xsl:value-of select="Mass/@unitOfMeasure" />"},
-        <!--
-				{"name":"", "class":"massPlusTolerance", "value":"<xsl:value-of select="Mass/@positiveTolerance" />
-				{"name":"", "class":"massMinusTolerance", "value":"<xsl:value-of select="Mass/@negativeTolerance" />
-				{"name":"", "class":"massPercent", "value":"<xsl:value-of select="MassPercent/@massPercent" />
-				{"name":"", "class":"percentPlusTolerance", "value":"<xsl:value-of select="MassPercent/@positiveTolerance" />
-				{"name":"", "class":"percentMinusTolerance", "value":"<xsl:value-of select="MassPercent/@negativeTolerance" />
-				{"name":"", "class":"matMassPercent", "value":"<xsl:value-of select="MatMassPercent/@massPercent" />
-				{"name":"", "class":"matPercentPlusTolerance", "value":"<xsl:value-of select="MatMassPercent/@positiveTolerance" />
-				{"name":"", "class":"matPercentMinusTolerance", "value":"<xsl:value-of select="MatMassPercent/@negativeTolerance" />
-        -->
-				{"name":"閾値レベル", "class":"aboveThresholdLevel", "value":"<xsl:value-of select="Threshold/@aboveThresholdLevel" />"},
-				{"name":"報告用途", "class":"reportableApplication", "value":"<xsl:value-of select="Threshold/@reportableApplication" />"},
-				{"name":"報告閾値", "class":"reportingThreshold", "value":"<xsl:value-of select="Threshold/@reportingThreshold" />"},
-				{"name":"機関", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
-				{"name":"ID", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
-      ]
-      <xsl:if test="count(./Exemptions)!=0">
-        ,"children":[
-          <xsl:apply-templates select="./Exemptions" />
-        ]
+      <xsl:if test="Threshold/@aboveThresholdLevel='true'">
+        <xsl:call-template name="split">
+          <xsl:with-param name="text" select="@comment" />
+          <xsl:with-param name="col" select="number('0')" />
+        </xsl:call-template>
       </xsl:if>
+      "name":"<xsl:value-of select="@name" />",<!--名称(英)-->
+      "MassPercent":"<xsl:value-of select="MatMassPercent/@massPercent" />",<!--含有率(%)-->
+      "aboveComplianceThreshold":<xsl:value-of select="Threshold/@aboveThresholdLevel" />,<!--含有判定-->
+      "reportableApplication":"<xsl:value-of select="Threshold/@reportableApplication" />",<!--報告用途-->
+      "reportingThreshold":"<xsl:value-of select="Threshold/@reportingThreshold" />",<!--報告閾値-->
+      "ID":"<xsl:value-of select="UniqueID/@identity" />",
+      "nameJA":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
+      "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
+      "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"
+      <xsl:apply-templates select="Exemptions" />
     }
 	</xsl:template>
+
+  <!--####################################### 物質群 V1 #######################################-->
+	<xsl:template match="SubstanceGroup">
+    {
+      <xsl:if test="Threshold/@aboveThresholdLevel='true'">
+        <xsl:call-template name="split">
+          <xsl:with-param name="text" select="@comment" />
+          <xsl:with-param name="col" select="number('0')" />
+        </xsl:call-template>
+      </xsl:if>
+      "name":"<xsl:value-of select="@name" />",<!--名称(英)-->
+      "MassPercent":"<xsl:value-of select="MatMassPercent/@massPercent" />",<!--含有率(%)-->
+      "aboveComplianceThreshold":<xsl:value-of select="Threshold/@aboveThresholdLevel" />,<!--含有判定-->
+      "reportableApplication":"<xsl:value-of select="Threshold/@reportableApplication" />",<!--報告用途-->
+      "reportingThreshold":"<xsl:value-of select="Threshold/@reportingThreshold" />",<!--報告閾値-->
+      "ID":"<xsl:value-of select="UniqueID/@identity" />",
+      "nameJA":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
+      "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>",
+      "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(UniqueID/@identity)" /></xsl:call-template>"
+      <xsl:apply-templates select="Exemptions" />
+    }
+	</xsl:template>
+
+  <!--####################################### 遵法判断 V2 #######################################-->
+  <xsl:template match="DsDsg">
+    {
+      <xsl:if test="ComplianceThreshold/@aboveComplianceThreshold='true'">
+        <xsl:call-template name="split">
+          <xsl:with-param name="text" select="@comment" />
+          <xsl:with-param name="col" select="number('0')" />
+        </xsl:call-template>
+      </xsl:if>
+      "name":"<xsl:value-of select="@name" />",<!--名称(英)-->
+      "weight":"<xsl:value-of select="Mass/@mass" />",<!--重量-->
+      "unit":"<xsl:value-of select="Mass/@unitOfMeasure" />",<!--重量単位-->
+      "MassPercent":"<xsl:value-of select="MassPercent/@massPercent" />",<!--含有率(%)-->
+      "aboveComplianceThreshold":<xsl:value-of select="ComplianceThreshold/@aboveComplianceThreshold" />,<!--含有判定-->
+      "reportableApplication":"<xsl:value-of select="ComplianceThreshold/@reportableApplication" />",<!--報告用途(英)-->
+      "reportingThreshold":"<xsl:value-of select="ComplianceThreshold/@reportingThreshold" />",<!--報告閾値(英)-->
+      "ID":"<xsl:value-of select="DsDsgID/@entryIdentity" />",<!--ID-->
+      "nameJA":"<xsl:call-template name="getSubstanceName"><xsl:with-param name="id" select="string(DsDsgID/@entryIdentity)" /></xsl:call-template>",
+      "AppJA":"<xsl:call-template name="getSubstanceApp"><xsl:with-param name="id" select="string(DsDsgID/@entryIdentity)" /></xsl:call-template>",
+      "ThresholdJA":"<xsl:call-template name="getSubstanceThreshold"><xsl:with-param name="id" select="string(DsDsgID/@entryIdentity)" /></xsl:call-template>"
+      <xsl:apply-templates select="Exemptions" />
+    }
+  </xsl:template>
+
   <!--####################################### 適用除外 #######################################-->
   <xsl:template match="Exemptions">
-    {
-      "isOpen": true,
-		  "type": "law",
-      "name": "<xsl:value-of select="concat(UniqueID/@authority, ': ', UniqueID/@identity)" />",
-		  "props":[
-        {"name":"内容", "class":"description", "value":"<xsl:value-of select="Exemption/@description" />"},
-        {"name":"グループID", "class":"groupIdentity", "value":"<xsl:value-of select="Exemption/@identity" />"},
-        {"name":"一般索引", "class":"ExemptionReg", "value":"<xsl:value-of select="Exemption/@regIndex" />"},<!--V2-->
-        {"name":"バージョン", "class":"UniqueIDversion", "value":"<xsl:value-of select="UniqueID/@version" />"},<!--V2--><!--対象リストVer-->
-        {"name":"機関", "class":"authority", "value":"<xsl:value-of select="UniqueID/@authority" />"},
-        {"name":"ID", "class":"identity", "value":"<xsl:value-of select="UniqueID/@identity" />"}
-      ]
-    }
+    ,"ExemptionDescription":"<xsl:value-of select="Exemption/@description" />"<!--除外内容-->
+    ,"ExemptionID":"<xsl:value-of select="Exemption/@identity" />"<!--除外ID-->
+    ,"ExemptionReg":"<xsl:value-of select="Exemption/@regIndex" />"<!--V2-->
+    ,"UniqueIDauthority":"<xsl:value-of select="UniqueID/@authority" />"<!--対象リスト-->
+    ,"UniqueIDID":"<xsl:value-of select="UniqueID/@identity" />"<!--対象リストID-->
+    ,"UniqueIDversion":"<xsl:value-of select="UniqueID/@version" />"<!--V2--><!--対象リストVer-->
+  </xsl:template>
+
+<!--
+##########################################################################################
+		分割関数
+##########################################################################################-->
+  <xsl:template name="split">
+    <xsl:param name="text"/>
+    <xsl:param name="col"/>
+    <xsl:param name="separator" select="'@'"/>
+    <xsl:param name="ver" select="//Main/@schemaDatabaseVersion"/>
+    <xsl:choose>
+      <xsl:when test="not(contains($text, $separator))">
+        "usePart":"<xsl:value-of select="normalize-space($text)"/>",
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$col=0">
+          "comment":"<xsl:value-of select="normalize-space(substring-before($text, $separator))"/>",
+        </xsl:if>
+        <xsl:if test="$col=1 and $ver='X6.01ex1.0'">
+          "weight":"<xsl:value-of select="normalize-space(substring-before($text, $separator))"/>",
+        </xsl:if>
+        <xsl:if test="$col=2 and $ver='X6.01ex1.0'">
+          "unit":"<xsl:value-of select="normalize-space(substring-before($text, $separator))"/>",
+        </xsl:if>
+        <xsl:if test="$col=3">
+          "use":"<xsl:value-of select="normalize-space(substring-before($text, $separator))"/>",
+        </xsl:if>
+        <xsl:call-template name="split">
+          <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+          <xsl:with-param name="col" select="$col+1"/>
+        </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 <!--
