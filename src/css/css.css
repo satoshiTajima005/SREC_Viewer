@@ -1,878 +1,158 @@
 html,
-* {
-	padding: 0;
-	margin: 0;
-	font-family: "Hiragino Kaku Gothic Pro", 'Meiryo UI', Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
-	font-size: 9pt;
+html * {
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'Meiryo UI', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
-html,
+html {
+  background-color: #f8f8f8;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
-	height: 100%;
-	width: 100%;
-	background: #f5f5f5;
+  height: 100%;
+  overflow: hidden;
 }
 
-th,
-td {
-	vertical-align: middle;
+#app {
+  margin: 10px;
+  height: 100%;
+  overflow: hidden;
 }
 
-#dropMsg {
-	position: fixed;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	text-align: center;
+.modal-background {
+  background-color:rgba(0,0,0,0.3);
 }
-
-#contents {
-	padding: 0;
-	background: #f5f5f5;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0 auto;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-#contents1 {
-	padding: 0;
-	background: #f5f5f5;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	margin: 0 auto;
-	position: fixed;
-	top: 0;
-	right: 0;
-}
-
-#fileTab {
-	border-left: none;
-	border-right: none;
-	border-radius: 0px;
-}
-
-button.moveView {
-	width: 20px;
-	height: 20px;
-	position: relative;
-	top: 4px;
-}
-
-.tabContents {
-	height: calc(100% - 56px);
-	overflow: auto;
-}
-
-.uniqueArea,
-hr {
-	margin: 10px 0;
-}
-
-.tabs>li span {
-	vertical-align: top;
-	padding-left: 3px;
-}
-
-#fileCatcher {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0.5);
-	display: none;
-}
-
-#search {
-	display: none;
-	background: #a0d8ef;
-	position: fixed;
-	top: 0;
-	right: 0;
-	border: 1px solid #e0e0e0;
-	border-top: none;
-	border-right: none;
-	border-radius: 0 0 0 5px;
-	padding: 5px;
-}
-
-#wrapCrt {
-	background: #fff;
-	padding: 2px;
-	border: 1px solid #e0e0e0;
-	border-radius: 3px 0 0 3px;
-	text-align: center;
-	border-right: none;
-}
-
-#wrapCrt span {
-	display: inline-block;
-	width: 30px;
-}
-
-#criteria {
-	background: transparent;
-	border: none;
-	width: 150px;
-	padding: 3px 0;
-}
-
-#search button {
-	width: 22px;
-	position: relative;
-	top: 1px;
-	height: 22px;
-	border: 1px solid #e0e0e0;
-}
-
-#moveDown {
-	border-left: 1px solid #fff!important;
-	border-radius: 0 3px 3px 0;
-}
-
-#searchClose {
-	margin-left: 5px;
-	border-radius: 3px;
-}
-
-.highlight {
-	background-color: yellow;
-	color: #333;
-}
-
-.highlight.current {
-	background-color: orange;
-	color: #333;
-}
-
-
-/*===========================  dialog ===================================*/
-
-#option li {
-	float: left;
-	margin: 5px 15px;
-}
-
-#option h5,
-#option span,
-#option ul,
-#jamaTreeExpand,
-#optTable {
-	clear: both;
-	display: block;
-}
-
-#option h5 {
-	font-size: 11pt;
-	padding-top: 20px;
-}
-
-#option h5:before {
-	content: "●";
-	font-size: 11pt;
-	color: green;
-}
-
-#option span {
-	font-weight: bold;
-	padding-top: 10px;
-}
-
-#optTable th,
-#optTable td {
-	text-align: left;
-}
-
-#optTable td {
-	padding-left: 15px;
-}
-
-#errMsg {
-	position: fixed;
-	min-width: 300px;
-	padding: 20px;
-	top: -100px;
-	background: #fef1ec;
-	border: 1px solid #cd0a0a;
-	color: #cd0a0a;
-	font-size: 15px;
-	box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-/*===========================  ui-accordion  ===================================*/
-
-.ui-accordion .ui-accordion-header {
-	height: 20px;
-}
-
-.ui-accordion .ui-accordion-header a {
-	line-height: 150%;
-	height: 20px;
-	margin: 0;
-	padding: 0 0 0 30px;
-}
-
-.ui-accordion .ui-accordion-header span {
-	height: 20px;
-	margin: 0;
-}
-
-
-/*===========================  tab ==========================================   */
-
-.ui-tabs {
-	font-size: 12px
-}
-
-.tabTree {
-	height: 500px;
-}
-
-
-/*===========================  UniqueView =================================== */
-
-.Unique,
-.UniqueJGP {
-	width: 48%;
-	float: left;
-	margin: 0 3px 3px 3px;
-	border: 1px #E3E3E3 solid;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.Unique caption,
-.UniqueJGP caption {
-	font-weight: bold;
-	text-align: left;
-}
-
-.Unique th,
-.UniqueJGP th,
-.ItemSelector th {
-	padding: 2px;
-	height: 16px;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	background: #717173;
-	color: white;
-	font-weight: 500;
-	text-align: left;
-	white-space: nowrap;
-	width: 30%;
-}
-
-.Unique td,
-.UniqueJGP td,
-.ItemSelector td {
-	padding: 2px;
-	height: 16px;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	text-align: left;
-	background: white;
-	color: #333;
-	width: 68%;
-}
-
-.attach,
-.contactInfo,
-.docOptionalInfo,
-.query {
-	width: auto;
-}
-
-.attach th,
-.contactInfo th,
-.docOptionalInfo th,
-.query th {
-	width: auto;
-	min-width: 150px;
-}
-
-.attach td,
-.contactInfo td,
-.docOptionalInfo td,
-.query td {
-	width: auto;
-	min-width: 150px;
-}
-
-.attach tr th:last-child,
-.attach tr td:last-child {
-	min-width: 50px;
-	text-align: center;
-}
-
-.attach button {
-	width: 20px;
-	height: 20px;
-}
-
-.attach button:hover {
-	cursor: pointer;
-}
-
-.productInfo_2 textarea {
-	border: none;
-	width: 100%;
-	height: 50px;
-}
-
-.partType th {
-	width: 5% !important;
-	text-align: center;
-}
-
-.ttl td,
-.ttl th {
-	width: auto;
-	height: 18px;
-}
-
-.ttl th {
-	text-align: center;
-}
-
-.mspRow {
-	margin: 0 3px 3px 3px;
-	border: 1px #E3E3E3 solid;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.mspRow th {
-	background: red;
-}
-
-.mspRow th {
-	padding: 3px;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	background: #717173;
-	color: white;
-}
-
-.mspRow td {
-	padding: 3px;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	background: white;
-	color: #333;
-}
-
-.UniqueJGP tr:first-child th {
-	text-align: center;
-}
-
-.UniqueJGP td {
-	width: 180px;
-}
-
-.UniqueJGP td.wDouble {
-	width: 360px;
-}
-
-.iraimoto th {
-	width: 10%;
-	text-align: center;
-}
-
-.JGP3>div {
-	max-height: 250px;
-}
-
-.ItemSelector {
-	width: 97%;
-	border: 1px #E3E3E3 solid;
-	border-collapse: collapse;
-	border-spacing: 0;
-	background-color: transparent;
-}
-
-.ItemSelector th {
-	width: auto;
-}
-
-.ItemSelector td {
-	padding: 2px;
-	width: auto;
-	cursor: pointer;
-}
-
-.ItemSelector tr:hover>td {
-	background: #fcf0ba;
-}
-
-
-/*===========================  TableView  ===================================*/
-
-.tabTable {
-	overflow: auto;
-}
-
-.compositionTbl {
-	margin: 0;
-	padding: 0;
-	border: 1px gray solid;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.compositionTbl th {
-	padding: 3px;
-	border: 1px lightgrey solid;
-	border-width: 0 0 1px 1px;
-	background: #717173;
-	color: white;
-	font-weight: 500;
-	line-height: 120%;
-	text-align: center;
-	white-space: normal;
-}
-
-.compositionTbl td {
-	padding: 3px;
-	border: 1px gray solid;
-	border-width: 0 0 1px 1px;
-	text-align: left;
-	background: white;
-	white-space: normal;
+.modal .title{
+  margin: 24px 0 5px 0;
 }
-
-.w12 {
-	width: 12px;
-}
-
-.w20 {
-	width: 20px;
-}
-
-.w30 {
-	width: 30px;
-}
-
-.w40 {
-	width: 40px;
-}
-
-.w100 {
-	width: 100px;
-}
-
-.w150 {
-	width: 150px;
-}
-
-.tip {
-	text-decoration: underline;
-	color: #4c7f26;
-	cursor: pointer;
-	font-weight: bold;
-}
-
-
-/*===========================  TreeView   ===================================   */
-
-.tvLeft {
-	height: 500px;
-	border: 1px solid #DFD9C3;
-	overflow: auto;
-	background: #fff;
-	float: left;
-	width: 38%;
-}
-
-.tvRight {
-	height: 500px;
-	overflow: auto;
-	padding-left: 10px;
-	float: left;
-	border-left: none;
-	width: 60%;
-}
-
-.tvRight select {
-	border: none;
-	background: transparent;
-}
-
-.tag {
-	display: none;
-}
-
-
-/*-----------------------------------------------------------------------------------------*/
-
-.treeja li,
-.treeen li,
-.treezh li {
-	padding: 3px 0 2px 16px;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.treeja li span,
-.treeen li span,
-.treezh li span {
-	padding: 1px 0 1px 18px;
-	width: auto;
-	height: 18px;
-}
-
-
-/*日本語*/
-
-
-/*AIS*/
-
-.treeja li span.seihin {
-	background: url(images/JA_SEI.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.kaisou {
-	background: url(images/JA_KS.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.buhin {
-	background: url(images/JA_BH.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.zairyou {
-	background: url(images/JA_ZR.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.busshitsu {
-	background: url(images/JA_BS.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.hourei {
-	background: url(images/JA_HR.png) 0 0 no-repeat!important;
-}
-
-
-/*JAMA*/
-
-.treeja li span.nparts {
-	background: url(images/JA_NB.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.parts {
-	background: url(images/JA_BH.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.material {
-	background: url(images/JA_ZR.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.substance {
-	background: url(images/JA_KB.png) 0 0 no-repeat!important;
-}
-
-
-/*IEC*/
-
-.treeja li span.Product {
-	background: url(images/Product_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.ProductPart {
-	background: url(images/ProductPart_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.Material {
-	background: url(images/Material_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.Substance {
-	background: url(images/Substance_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.Exemptions {
-	background: url(images/Exemptions_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.substanceTrue {
-	background: url(images/SubstanceTrue_J.png) 0 0 no-repeat!important;
-}
-
-.treeja li span.substanceFalse {
-	background: url(images/SubstanceFalse_J.png) 0 0 no-repeat!important;
-}
-
-
-/*英語*/
-
-
-/*AIS*/
-
-.treeen li span.seihin {
-	background: url(images/EN_SEI.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.kaisou {
-	background: url(images/EN_KS.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.buhin {
-	background: url(images/EN_BH.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.zairyou {
-	background: url(images/EN_ZR.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.busshitsu {
-	background: url(images/EN_KB.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.hourei {
-	background: url(images/EN_HR.png) 0 0 no-repeat!important;
-}
-
-
-/*JAMA*/
-
-.treeen li span.nparts {
-	background: url(images/EN_NB.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.parts {
-	background: url(images/EN_BH.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.material {
-	background: url(images/EN_ZR.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.substance {
-	background: url(images/EN_KB.png) 0 0 no-repeat!important;
-}
-
-
-/*IEC*/
-
-.treeen li span.Product {
-	background: url(images/Product_E.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.ProductPart {
-	background: url(images/ProductPart_E.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.Material {
-	background: url(images/Material_E.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.Substance {
-	background: url(images/Substance_E.png) 0 0 no-repeat!important;
+.modal .title:first-child{
+  margin: 0 0 5px 0;
 }
-
-.treeen li span.Exemptions {
-	background: url(images/Exemptions_E.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.substanceTrue {
-	background: url(images/SubstanceTrue_E.png) 0 0 no-repeat!important;
-}
-
-.treeen li span.substanceFalse {
-	background: url(images/SubstanceFalse_E.png) 0 0 no-repeat!important;
-}
-
-
-/*中国語*/
-
-
-/*AIS*/
-
-.treezh li span.seihin {
-	background: url(images/JA_SEI.png) 0 0 no-repeat!important;
+.modal .items{
+  padding-left: 20px;
 }
-
-.treezh li span.kaisou {
-	background: url(images/ZH_KS.png) 0 0 no-repeat!important;
+.modal .items label{
+  margin-right: 30px;
 }
 
-.treezh li span.buhin {
-	background: url(images/JA_BH.png) 0 0 no-repeat!important;
+.header {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
 }
 
-.treezh li span.zairyou {
-	background: url(images/JA_ZR.png) 0 0 no-repeat!important;
+.viewarea {
+  height: calc(100% - 70px);
 }
 
-.treezh li span.busshitsu {
-	background: url(images/JA_BS.png) 0 0 no-repeat!important;
+.half {
+  max-width: 50%;
 }
 
-.treezh li span.hourei {
-	background: url(images/JA_HR.png) 0 0 no-repeat!important;
+.tabs {
+  margin-bottom: 0 !important;
 }
 
-
-/*JAMA*/
-
-.treezh li span.nparts {
-	background: url(images/ZH_NB.png) 0 0 no-repeat!important;
+.tabs ul {
+  border-bottom: none;
 }
 
-.treezh li span.parts {
-	background: url(images/JA_BH.png) 0 0 no-repeat!important;
+.tabname {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.treezh li span.material {
-	background: url(images/JA_ZR.png) 0 0 no-repeat!important;
+.movetab {
+  margin-right: 5px;
+  margin-left: 15px;
+  color: #ccc;
 }
 
-.treezh li span.substance {
-	background: url(images/JA_KB.png) 0 0 no-repeat!important;
+.movetab:hover {
+  color: #aaa;
 }
-
-
-/*IEC*/
 
-.treezh li span.Product {
-	background: url(images/Product_Z.png) 0 0 no-repeat!important;
+.tabbody {
+  border: 1px solid #dbdbdb;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 15px 15px 20px 15px;
+  background-color: #fff;
+  overflow-y: scroll;
 }
 
-.treezh li span.ProductPart {
-	background: url(images/ProductPart_Z.png) 0 0 no-repeat!important;
+.preview {
+  max-height: calc(100% - 70px);
 }
 
-.treezh li span.Material {
-	background: url(images/Material_Z.png) 0 0 no-repeat!important;
+.message-body.columns {
+  padding: 0.5em 1.25em;
 }
 
-.treezh li span.Substance {
-	background: url(images/Substance_Z.png) 0 0 no-repeat!important;
+.message-body .column {
+  padding-bottom: 0;
 }
 
-.treezh li span.Exemptions {
-	background: url(images/Exemptions_Z.png) 0 0 no-repeat!important;
+.unique-table {
+  width: 100%;
 }
 
-.treezh li span.substanceTrue {
-	background: url(images/SubstanceTrue_Z.png) 0 0 no-repeat!important;
+.unique-table th {
+  width: 140px;
+  padding: 3px 10px;
+  color: #111;
+  font-weight: normal;
+  text-align: right !important;
+  vertical-align: middle;
 }
 
-.treezh li span.substanceFalse {
-	background: url(images/SubstanceFalse_Z.png) 0 0 no-repeat!important;
+.unique-table td {
+  padding: 3px 10px;
 }
 
-
-/*----------------------------------------------------------------------------------------*/
-
-.BreakDown {
-	width: 100%;
-	border: 1px #E3E3E3 solid;
-	border-collapse: collapse;
-	border-spacing: 0;
+/*unique fade*/
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s;
 }
-
-.BreakDown th {
-	height: 20px;
-	width: 150px;
-	padding: 3px;
-	text-align: left;
-	font-size: 12px;
-	font-weight: 500;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	background: #717173;
-	color: white;
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
-.BreakDown th.thZRmass,
-.BreakDown th.thBSRate,
-.BreakDown th.thBSmass,
-.BreakDown th.thMsBSrate {
-	width: 100px;
+/*table header*/
+.layer{
+  background-color:#f7b263;
 }
-
-.BreakDown th.BD_Unit {
-	width: 50px;
-	border-left: none;
+.parts{
+  background-color:#fdff6d;
 }
-
-.BreakDown td {
-	padding: 0;
-	margin: 0;
-	height: 20px;
-	text-align: left;
-	font-size: 12px;
-	border: 1px #E3E3E3 solid;
-	border-width: 0 0 1px 1px;
-	background: white;
+.material{
+  background-color:#c6f7c6;
 }
-
-.BreakDown th.JAMA_H,
-.BreakDown th.AIS {
-	height: auto;
-	width: 15px;
-	text-align: center;
-	vertical-align: middle;
+.substance{
+  background-color:#f7c6e7;
 }
-
-.BreakDown th.AIS {
-	color: black;
+.law{
+  background-color:#c6e7f7;
 }
 
-.BreakDown th.JAMA_N {
-	width: 15px;
+/**/
+.tree .item {
+  cursor: pointer;
 }
 
-.BreakDown th.JAMA_K {
-	width: 170px;
+.tree .node {
+  padding-left: 1.5em!important;
+  line-height: 1.5em!important;
+  list-style-type: none;
 }
 
-.BreakDown tr:first-child th:first-child {
-	width: 15px!important;
+.treecol{
+  height: 500px;
+  overflow-y: scroll;
 }
-
-
-/*   =========== 印刷用CSS ===========  */
 
-@media print {
-	body {
-		-webkit-print-color-adjust: exact;
-		width: 100%;
-		margin: 0;
-		font-size: 9pt;
-		padding: 0;
-		overflow: visible;
-	}
-	header {
-		display: none;
-	}
-	#contents, #contents1 {
-		filter: none;
-		position: static;
-		height: auto;
-		width: 99%;
-		margin: 0;
-		padding: 0;
-		overflow: visible;
-	}
-	.tabContents {
-		overflow: visible;
-	}
-	.tabs, #fileTab, #fileTab2 {
-		display: none;
-	}
-	.tvLeft {
-		height: auto;
-		overflow: visible;
-	}
-	.AIS1, .AIS2, .AIS3, .AIS4, .AIS5, .AIS6, .AIS7,
-	.JGP1, .JGP2, .JGP3, .JGP4,
-	.IEC1, .IEC2, .IEC3, .IEC4, .IEC5, .IEC6 {
-		page-break-inside: avoid;
-	}
+.is-selected {
+  color: #fff;
+  background-color: #5e9257;
 }
