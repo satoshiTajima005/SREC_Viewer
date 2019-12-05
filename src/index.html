@@ -1,159 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-	<meta charset='utf-8'>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/css.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.treeview.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/google.fonts.css">
+  <link rel="stylesheet" href="css/green.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="js/js.cookie.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!--<script src="js/vue.dev.js"></script>-->
+  <script src="js/unzip.min.js"></script>
+  <script src="js/component.js"></script>
+  <script src="js/main.js"></script>
+  <title>SREC-Viewer-Web (環境負荷物質報告書ビューワ― AIS/MSDSplus/JAMA/chemSHRPA/IEC62474)</title>
 </head>
 
 <body>
-	<div id="dropMsg">[開く(O)]からファイルを選択するか、ファイルをドロップしてください</div>
-	<div id="contents">
-		<ul id="fileTab"></ul>
-	</div>
-	<div id="contents1">
-		<ul id="fileTab1"></ul>
-	</div>
-
-
-	<!-- ****************************************** ダイアログ ****************************************** -->
-	<div id="option">
-		<div id="InitialView">
-			<h5 id="dlgOptH5View"></h5>
-			<span>-- AIS --</span>
-			<ul id="optAIS">
-				<li><input type="checkbox" id="chkAIS1" /><label class="lblAIS1" for="chkAIS1"></label></li>
-				<li><input type="checkbox" id="chkAIS2" /><label class="lblCompany" for="chkAIS2"></label></li>
-				<li><input type="checkbox" id="chkAIS3" /><label class="lblDept" for="chkAIS3"></label></li>
-				<li><input type="checkbox" id="chkAIS4" /><label class="lblReq" for="chkAIS4"></label></li>
-				<li><input type="checkbox" id="chkAIS5" /><label class="lblItem" for="chkAIS5"></label></li>
-				<li><input type="checkbox" id="chkAIS6" /><label class="lblArticle" for="chkAIS6"></label></li>
-				<li><input type="checkbox" id="chkAIS7" /><label class="lblTotal" for="chkAIS7"></label></li>
-			</ul>
-			<span>-- MSDSplus --</span>
-			<ul id="optMSP">
-				<li><input type="checkbox" id="chkMS1" /><label class="lblMSp1" for="chkMS1"></label></li>
-				<li><input type="checkbox" id="chkMS2" /><label class="lblCompany" for="chkMS2"></label></li>
-				<li><input type="checkbox" id="chkMS3" /><label class="lblDept" for="chkMS3"></label></li>
-				<li><input type="checkbox" id="chkMS4" /><label class="lblReq" for="chkMS4"></label></li>
-				<li><input type="checkbox" id="chkMS5" /><label class="lblItem" for="chkMS5"></label></li>
-				<li><input type="checkbox" id="chkMS6" /><label class="lblProduct" for="chkMS6"></label></li>
-				<li><input type="checkbox" id="chkMS7" /><label class="lblRow" for="chkMS7"></label></li>
-			</ul>
-			<span>-- JGPSSI --</span>
-			<ul id="optJGP">
-				<li><input type="checkbox" id="chkJGP1" /><label class="lblJGP1" for="chkJGP1"></label></li>
-				<li><input type="checkbox" id="chkJGP2" /><label class="lblJGP2" for="chkJGP2"></label></li>
-				<li><input type="checkbox" id="chkJGP3" /><label class="lblJGP3" for="chkJGP3"></label></li>
-				<li><input type="checkbox" id="chkJGP4" /><label class="lblJGP4" for="chkJGP4"></label></li>
-			</ul>
-			<span>-- JAMA --</span>
-			<ul id="optJAMA">
-				<li><input type="checkbox" id="chkJAMA1" /><label class="lblJAMA1" for="chkJAMA1"></label></li>
-			</ul>
-			<span>-- IEC62474(chemSHERPA) --</span>
-			<ul id="optIEC">
-				<li><input type="checkbox" id="chkIEC1" /><label class="lblIEC1" for="chkIEC1"></label></li>
-				<li><input type="checkbox" id="chkIEC2" /><label class="lblIEC2" for="chkIEC2"></label></li>
-				<li><input type="checkbox" id="chkIEC3" /><label class="lblIEC3" for="chkIEC3"></label></li>
-				<li><input type="checkbox" id="chkIEC4" /><label class="lblIEC4" for="chkIEC4"></label></li>
-				<li><input type="checkbox" id="chkIEC5" /><label class="lblIEC5" for="chkIEC5"></label></li>
-				<li><input type="checkbox" id="chkIEC6" /><label class="lblIEC6" for="chkIEC6"></label></li>
-			</ul>
-		</div>
-		<div id="jamaTreeExpand">
-			<h5 id="dlgOptH5JamaTree"></h5>
-			<ul id="optJamaTree">
-				<li><input type="checkbox" id="chkJamaTree1" /><label class="lblJamaTree1" for="chkJamaTree1"></label></li>
-				<li><input type="checkbox" id="chkJamaTree2" /><label class="lblJamaTree2" for="chkJamaTree2"></label></li>
-				<li><input type="checkbox" id="chkJamaTree3" /><label class="lblJamaTree3" for="chkJamaTree3"></label></li>
-			</ul>
-		</div>
-	</div>
-
-	<input style="display:none;" id="fileDialog" type="file" accept=".xml,.csv,.jgp4,.shai,.shci" multiple />
-	<div id="fileCatcher"></div>
-	<div id="search">
-		<span id="wrapCrt">
-				<input type="text" id="criteria"/>
-				<span id="bunshi">0</span>/<span id="bunbo">0</span>
-		</span>
-		<button type="button" id="moveUp"><img src="css/images/arrow-up.png"/></button><button type="button" id="moveDown"><img src="css/images/arrow-down.png"/></button>
-		<button type="button" id="searchClose"><img src="css/images/close.png"/></button>
-	</div>
-
-	<div id="about">
-		<img src="css/images/SREC_Viewer_48.png" style="float:left;" /><span>SREC_Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.6.2.3</span>
-<pre style="clear:both;">
-
-Copyright 2010 - 2019 FrogHand (Satoshi Tajima)
-Released under the MIT license
-<a href="http://opensource.org/licenses/mit-license.php">http://opensource.org/licenses/mit-license.php</a>
-
-Mail　  <a href="mailto:froghand0104@gmail.com" class="mail">froghand0104@gmail.com</a>
-Blog　  <a href="http://froghand0104.blogspot.com">http://froghand0104.blogspot.com</a>
-Vector  <a href="http://www.vector.co.jp/soft/winnt/business/se486453.html">http://www.vector.co.jp/soft/winnt/business/se486453.html</a>
-
-基本的な使い方は・・・すぐわかりますよね(ヘルプを作るめんどくささの言い訳です・・・)
-問題がありましたらメールかブログにコメントで連絡をいただけるとたすかります。
-
-</pre> 【著作権情報】
-<pre style="height:150px;overflow:auto;display:block;border:1px solid #666;background:#fff;padding:10px">
----AIS/MSDSplus表示機能に関して---
-	本ツールはECALGA環境辞書を複写/引用しています。
-	ECALGA環境辞書の著作権はJEITA ECセンターにあります。
-	JETITA ECセンター  <a href="http://ec.jeita.or.jp/">http://ec.jeita.or.jp/</a>
-	ECALGA環境辞書     <a href="http://ec.jeita.or.jp/jp/modules/contents09/">http://ec.jeita.or.jp/jp/modules/contents09/</a>
-	Copyright (c) 2007 JEITA
-
----JGP表示機能に関して---
-	本ツールは旧JGPSSI(グリーン調達調査共通化協議会)の作成資料を引用しています
-	旧JGPSSI(現 国内VT62474)   <a href="http://vt62474.jp/index.html">http://vt62474.jp/index.html</a>
-
-***Module Credits***
-	NW.js v0.38.2
-	Copyright © 2015-2018 NW.js community
-
-	jQuery v3.2.1
-	Copyright 2017 The jQuery Foundation. jQuery License
-
-	jQuery UI v1.12.1
-	Copyright 2016 jQuery Foundation and other contributors
-
-	Treeview 1.5pre - jQuery plugin
-	Copyright (c) 2007 Jorn Zaefferer
-
-	highlight v5 - jQuery plugin
-	Johann Burkard <a href="http://johannburkard.de">http://johannburkard.de</a> <a href="mailto:jb@eaio.com" class="mail">jb@eaio.com</a>
-
-	iconv-lite - Node.js module
-	Copyright (c) 2011 Alexander Shtuchkin
-
-	node-zip - Node.js module
-	Diego Araos <a href="http://wehack.it/">http://wehack.it/</a> <a href="mailto:d@wehack.it">d@wehack.it</a>
-	
-	==Leaf icon==
-	Creator : DragonArt
-	Website : <a href="http://dragonartz.wordpress.com/">http://dragonartz.wordpress.com/</a>
-
-	==SpyGlass icon==
-	Creator : VistaICO Toolbar Icons
-	Website : <a href="http://www.vistaico.com/contact.htm">http://www.vistaico.com/contact.htm</a>
-	Copyright (C) VistaICO.com
-</pre>
-	</div>
-
-	<!-- ****************************************** スクリプト ****************************************** -->
-	<script src="js/jquery/jquery.js"></script>
-	<script src="js/jquery/jquery.treeview.min.js"></script>
-	<script src="js/jquery/jquery-ui.min.js"></script>
-	<script src="js/jquery/jquery.highlight.js"></script>
-	<script src="js/const.js"></script>
-	<script src="js/showFile.js"></script>
-	<script src="js/ready.js"></script>
-
+  <div id="app">
+    <div class="header columns">
+      <div class="column is-narrow">
+        <img src="css/logo.png">
+      </div>
+      <div class="column is-2">
+        <div class="file is-green">
+          <label class="file-label">
+            <input class="file-input" type="file" @change="openFile" accept=".xml,.csv,.shai,.shci" multiple>
+            <span class="file-cta">
+              <span class="file-icon"><i class="far fa-folder-open"></i></span>
+              <span class="file-label">{{language.openFile}}</span>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="column">
+        <!--
+        <button type="button" class="button is-green" :class="{'is-light': langType!=='ja'}" @click="langType='ja'">Japanese</button>
+        <button type="button" class="button is-green" :class="{'is-light': langType!=='en'}" @click="langType='en'" disabled>English</button>
+        <button type="button" class="button is-green" :class="{'is-light': langType!=='zh'}" @click="langType='zh'" disabled>Chinese</button>
+        -->
+      </div>
+      <div class="column is-narrow">
+        <button type="button" class="button is-green" @click="isShowOption=true">
+          <span class="icon"><i class="fas fa-wrench"></i></span>
+          <span>オプション</span>
+        </button>
+        <button type="button" class="button is-green" @click="isShowHelp=true">
+          <span class="icon"><i class="fas fa-question"></i></span>
+          <span>ヘルプ</span>
+        </button>
+        <a href="https://froghand0104.blogspot.com/p/blog-page.html" target="_blank" style="line-height: 40px; padding-left:30px;">
+          ダウンロード版はこちら>>
+        </a>
+      </div>
+    </div>
+    <div class="viewarea columns">
+      <tabs v-if="tabLeft.list.length" :class="{half: tabRight.list.length}" :target="tabLeft" :moveto="tabRight" :language="language"></tabs>
+      <tabs v-if="tabRight.list.length" :class="{half: tabLeft.list.length}" :target="tabRight" :moveTo="tabLeft" :language="language"></tabs>
+    </div>
+    <err-msg :o="err"></err-msg>
+    <option-dlg :o="options" v-if="isShowOption"></option-dlg>
+    <Help-dlg v-if="isShowHelp"></Help-dlg>
+  </div>
 </body>
+
 </html>
