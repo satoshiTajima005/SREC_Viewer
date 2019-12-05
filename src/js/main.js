@@ -23,7 +23,13 @@ String.prototype.repeat = function (n) {
   return ret;
 };
 
-Vue.config.productionTip = true;
+//Vue.config.productionTip = true;
+
+var fs = require('fs');
+var path = require('path');
+var nw = require('nw.gui');
+const nwDir = path.dirname(process.execPath) + path.sep;
+
 let app;
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -79,13 +85,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     mounted :function(){
-      //optionsをクッキーから取得
-      let opt = Cookies.get('opt');
+      //optionsをローカルファイルから取得
+      //let opt = Cookies.get('opt');
+      let opt;
+      try {
+        opt = fs.readFileSync(nwDir + "option.json", { encoding: "utf-8" });
+      }catch(e){}
+
       if (opt) {
         this.options = JSON.parse(opt);
       }else{
-        Cookies.set('opt', JSON.stringify(this.$root.options), { expires: 365 });
+        //Cookies.set('opt', JSON.stringify(this.$root.options), { expires: 365 });
+        fs.writeFileSync(nwDir + "option.json", JSON.stringify(this.$root.options));
       }
+
+      //引数ファイル処理　todo
+      var arg = nw.App.argv;
+
     },
     methods: {
       openFile: async function (e) {

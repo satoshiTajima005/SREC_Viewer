@@ -11,7 +11,7 @@
 		"min_width": 800,
 		"min_height": 600,
 		"icon": "css/logo_16.png",
-		"show": false,
+		"show": true,
 		"toolbar": false
 	},
 	"license": "MIT",

@@ -1,19 +1,19 @@
 {
-  "version": "6.2.3",
+  "version": "7.0.0",
   "name": "srec_viewer",
-  "description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, JGPSSI, chemSHERPA, IEC62474]",
+  "description": "環境負荷物質ファイルを表示します[JAMP-AIS, JAMP-MSDSplus, JAMA, chemSHERPA, IEC62474]",
   "author": "FrogHand (Satoshi Tajima)",
   "repository": {
     "type": "git",
     "url": "https://github.com/satoshiTajima005/SREC_Viewer"
   },
   "devDependencies": {
-    "nw": "^0.42.6",
+    "nw": "^0.42.6-sdk",
     "nw-builder": "^3.5.7"
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win32,win64,osx64,linux64 --version 0.42.6 --flavor normal --buildDir dist/ src/"
+    "prod": "nwbuild --platforms win32,win64,linux64 --version 0.42.6 --flavor normal --buildDir dist/ src/"
   },
   "main": "index.js",
   "license": "MIT",

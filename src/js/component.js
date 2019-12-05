@@ -166,7 +166,8 @@ Vue.component('OptionDlg', {
   },
   methods: {
     closeDlg: function(){
-      Cookies.set('opt', JSON.stringify(this.item), { expires: 365 });
+      //Cookies.set('opt', JSON.stringify(this.item), { expires: 365 });
+      fs.writeFileSync(nwDir + "option.json", JSON.stringify(this.$root.options));
       this.$parent.isShowOption = false;
     }
   }
@@ -205,16 +206,8 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
 ・JAMA/JAPIA統一データシート [*.csv]
 の各ファイルのビューワです。
 
-各ツールとも、専用ツールをダウンロードしなくては内容が見れないという
-欠点があるので、その補完としてお使いください。
-
-ファイル関連付けを行いたい方は、<a href="https://froghand0104.blogspot.com/p/blog-page.html" target="_blank">ダウンロード版</a>をご使用ください。
-
 多言語化は・・・気が向いたらやります。
 
-※環境情報は機密事項を含むので、オプション機能を除くすべての機能は
-　クライアント側で処理しており、サーバーに表示したファイル内容が
-　送信されることはありません。
 ※JGPSSIの表示機能に関しては、実務上ほぼ使われなくなったので、
 　大幅改定を機に削除しました。
 
