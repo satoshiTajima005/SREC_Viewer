@@ -6,7 +6,7 @@
 - JAMP
     - AIS (*.xml)
     - MSDSplus (*.xml)
-- JGPSSI (*.jgp4)
+- ~~JGPSSI (*.jgp4)~~ 実務上ほぼ使われなくなったので、バージョンアップ時に削除しました
 - JAMA/JAPIA 統一データシート (*.csv)
 - chemSHERPA
     - 成形品(*.shai)
@@ -15,6 +15,8 @@
 
 の各ファイルの内容を参照することができます。
 [ベクター](http://www.vector.co.jp/soft/winnt/business/se486453.html)に公開しているフリーソフトのパッケージング前のソースコードです。
+
+[オンライン版](https://satoshitajima005.github.io/SREC-Viewer-Web/)も公開しました
 
 ### 使い方
 開発環境には[NW.js](https://nwjs.io/)を使用しているので、
