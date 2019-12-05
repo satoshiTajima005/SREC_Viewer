@@ -10,7 +10,7 @@
 		"height": 600,
 		"min_width": 800,
 		"min_height": 600,
-		"icon": "css/images/SREC_Viewer_16.png",
+		"icon": "css/logo_16.png",
 		"show": false,
 		"toolbar": false
 	},
