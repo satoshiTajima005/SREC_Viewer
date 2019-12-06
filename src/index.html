@@ -20,46 +20,51 @@
 
 <body>
   <div id="app">
-    <div class="header columns">
-      <div class="column is-narrow">
-        <img src="css/logo.png">
-      </div>
-      <div class="column is-2">
-        <div class="file is-green">
-          <label class="file-label">
-            <input class="file-input" type="file" @change="openFile" accept=".xml,.csv,.shai,.shci" multiple>
-            <span class="file-cta">
-              <span class="file-icon"><i class="far fa-folder-open"></i></span>
-              <span class="file-label">{{language.openFile}}</span>
-            </span>
-          </label>
+    <div class="dropstarter" @dragover.prevent="dragover">
+      <div class="header columns">
+        <div class="column is-narrow">
+          <img src="css/logo.png">
+        </div>
+        <div class="column is-2">
+          <div class="file is-green">
+            <label class="file-label">
+              <input class="file-input" type="file" @change="openFile" accept=".xml,.csv,.shai,.shci" multiple>
+              <span class="file-cta">
+                <span class="file-icon"><i class="far fa-folder-open"></i></span>
+                <span class="file-label">{{language.openFile}}</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="column">
+          <!--
+          <button type="button" class="button is-green" :class="{'is-light': langType!=='ja'}" @click="langType='ja'">Japanese</button>
+          <button type="button" class="button is-green" :class="{'is-light': langType!=='en'}" @click="langType='en'" disabled>English</button>
+          <button type="button" class="button is-green" :class="{'is-light': langType!=='zh'}" @click="langType='zh'" disabled>Chinese</button>
+          -->
+        </div>
+        <div class="column is-narrow">
+          <button type="button" class="button is-green" @click="isShowOption=true">
+            <span class="icon"><i class="fas fa-wrench"></i></span>
+            <span>オプション</span>
+          </button>
+          <button type="button" class="button is-green" @click="isShowHelp=true">
+            <span class="icon"><i class="fas fa-question"></i></span>
+            <span>ヘルプ</span>
+          </button>
         </div>
       </div>
-      <div class="column">
-        <!--
-        <button type="button" class="button is-green" :class="{'is-light': langType!=='ja'}" @click="langType='ja'">Japanese</button>
-        <button type="button" class="button is-green" :class="{'is-light': langType!=='en'}" @click="langType='en'" disabled>English</button>
-        <button type="button" class="button is-green" :class="{'is-light': langType!=='zh'}" @click="langType='zh'" disabled>Chinese</button>
-        -->
+      <div class="viewarea columns">
+        <tabs v-if="tabLeft.list.length" :class="{half: tabRight.list.length}" :target="tabLeft" :moveto="tabRight" :language="language"></tabs>
+        <tabs v-if="tabRight.list.length" :class="{half: tabLeft.list.length}" :target="tabRight" :moveTo="tabLeft" :language="language"></tabs>
       </div>
-      <div class="column is-narrow">
-        <button type="button" class="button is-green" @click="isShowOption=true">
-          <span class="icon"><i class="fas fa-wrench"></i></span>
-          <span>オプション</span>
-        </button>
-        <button type="button" class="button is-green" @click="isShowHelp=true">
-          <span class="icon"><i class="fas fa-question"></i></span>
-          <span>ヘルプ</span>
-        </button>
+      <err-msg :o="err"></err-msg>
+      <option-dlg :o="options" v-if="isShowOption"></option-dlg>
+      <Help-dlg v-if="isShowHelp"></Help-dlg>
+      <div class="droper" v-show="isShowDroper" @dragleave.prevent="dragleave" @drop.prevent="ondrop">
+        <div class="notification is-success">ドロップしてください</div>
       </div>
     </div>
-    <div class="viewarea columns">
-      <tabs v-if="tabLeft.list.length" :class="{half: tabRight.list.length}" :target="tabLeft" :moveto="tabRight" :language="language"></tabs>
-      <tabs v-if="tabRight.list.length" :class="{half: tabLeft.list.length}" :target="tabRight" :moveTo="tabLeft" :language="language"></tabs>
-    </div>
-    <err-msg :o="err"></err-msg>
-    <option-dlg :o="options" v-if="isShowOption"></option-dlg>
-    <Help-dlg v-if="isShowHelp"></Help-dlg>
   </div>
 </body>
 

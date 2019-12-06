@@ -20,19 +20,44 @@ body {
   overflow: hidden;
 }
 
-.modal-background {
-  background-color:rgba(0,0,0,0.3);
+.dropstarter {
+  width: 100%;
+  height: 100%;
 }
-.modal .title{
+
+.droper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.droper div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal .title {
   margin: 24px 0 5px 0;
 }
-.modal .title:first-child{
+
+.modal .title:first-child {
   margin: 0 0 5px 0;
 }
-.modal .items{
+
+.modal .items {
   padding-left: 20px;
 }
-.modal .items label{
+
+.modal .items label {
   margin-right: 30px;
 }
 
@@ -112,28 +137,35 @@ body {
 }
 
 /*unique fade*/
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: all .3s;
 }
-.fade-enter, .fade-leave-to {
+
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 
 /*table header*/
-.layer{
-  background-color:#f7b263;
+.layer {
+  background-color: #f7b263;
 }
-.parts{
-  background-color:#fdff6d;
+
+.parts {
+  background-color: #fdff6d;
 }
-.material{
-  background-color:#c6f7c6;
+
+.material {
+  background-color: #c6f7c6;
 }
-.substance{
-  background-color:#f7c6e7;
+
+.substance {
+  background-color: #f7c6e7;
 }
-.law{
-  background-color:#c6e7f7;
+
+.law {
+  background-color: #c6e7f7;
 }
 
 /**/
@@ -142,12 +174,12 @@ body {
 }
 
 .tree .node {
-  padding-left: 1.5em!important;
-  line-height: 1.5em!important;
+  padding-left: 1.5em !important;
+  line-height: 1.5em !important;
   list-style-type: none;
 }
 
-.treecol{
+.treecol {
   height: 500px;
   overflow-y: scroll;
 }

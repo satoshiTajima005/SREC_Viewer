@@ -106,7 +106,7 @@ Vue.component('OptionDlg', {
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">初期表示設定<span style="font-size:0.5em; padding-left:20px;">※Cookieを使用しています</span></p>
+          <p class="modal-card-title">初期表示設定</p>
           <button class="delete" aria-label="close" @click="closeDlg"></button>
         </header>
         <section class="modal-card-body">
@@ -205,7 +205,8 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
 ・JAMA/JAPIA統一データシート [*.csv]
 の各ファイルのビューワです。
 
-多言語化は・・・気が向いたらやります。
+・ウィンドウへのファイルドロップにも対応しています
+・多言語化は・・・ご要望が多ければやろうかな
 
 ※JGPSSIの表示機能に関しては、実務上ほぼ使われなくなったので、
 　大幅改定を機に削除しました。
@@ -219,11 +220,9 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
   JETITA ECセンター  <a href="http://ec.jeita.or.jp/">http://ec.jeita.or.jp/</a>
   ECALGA環境辞書     <a href="http://ec.jeita.or.jp/jp/modules/contents09/">http://ec.jeita.or.jp/jp/modules/contents09/</a>
   Copyright (c) 2007 JEITA
-
 ==Leaf icon==
   Creator : DragonArt
   Website : <a href="http://dragonartz.wordpress.com/">http://dragonartz.wordpress.com/</a>
-
  ==SpyGlass icon==
   Creator : VistaICO Toolbar Icons
   Website : <a href="http://www.vistaico.com/contact.htm">http://www.vistaico.com/contact.htm</a>

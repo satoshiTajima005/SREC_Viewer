@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       err: [], //{filename:'', msg:''}
       isShowOption: false, 
       isShowHelp: false,
+      isShowDroper: false,
       options:{
         AIS1:true,
         AIS2:true,
@@ -96,6 +97,30 @@ document.addEventListener('DOMContentLoaded', function () {
       if (arg.length) this.openArgFile(arg);
     },
     methods: {
+      dragover: function(e){
+        let isFiles = e.dataTransfer.types.filter(item => item=='Files').length;
+        if (isFiles) this.isShowDroper = true;
+      },
+      dragleave: function(e){
+        this.isShowDroper = false;
+      },
+      ondrop: async function(e){
+        let me = this;
+        this.isShowDroper = false;
+        let isFiles = e.dataTransfer.types.filter(item => item=='Files').length;
+        if (!isFiles) return;
+
+        let files = [];
+        for (let i = 0; i < e.dataTransfer.files.length; i++) files.push(e.dataTransfer.files[i]);
+
+        //ファイルのテキスト読み取り
+        let tabObject = [];
+        await Promise.all(files.map(function (file) {
+          return me.getFileArr(file, tabObject);
+        }));
+
+        this.showFile(tabObject);
+      },
       openFile: async function (e) {
         let me = this;
 

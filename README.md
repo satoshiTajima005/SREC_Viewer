@@ -12,11 +12,10 @@
     - 成形品(*.shai)
     - 化学品(*.shci)
 - IEC62474 (*.xml)
-
 の各ファイルの内容を参照することができます。
-[ベクター](http://www.vector.co.jp/soft/winnt/business/se486453.html)に公開しているフリーソフトのパッケージング前のソースコードです。
 
-[オンライン版](https://satoshitajima005.github.io/SREC-Viewer-Web/)も公開しました
+・[ベクター](http://www.vector.co.jp/soft/winnt/business/se486453.html)に公開しているフリーソフトのパッケージング前のソースコードです。
+・[オンライン版](https://satoshitajima005.github.io/SREC-Viewer-Web/)も公開しました
 
 ### TODO
 - nw-builder 0.42.6-osx64 のみパッケージングができない(パッケージング用のファイルに'UnhandledPromiseRejectionWarning'がある？)
