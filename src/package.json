@@ -15,5 +15,7 @@
 		"toolbar": false
 	},
 	"license": "MIT",
-	"dependencies": {}
+	"dependencies": {
+		"iconv-lite": "^0.5.0"
+	}
 }

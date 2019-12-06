@@ -28,6 +28,7 @@ String.prototype.repeat = function (n) {
 var fs = require('fs');
 var path = require('path');
 var nw = require('nw.gui');
+var iconvlite = require('iconv-lite');
 const nwDir = path.dirname(process.execPath) + path.sep;
 
 let app;
@@ -99,9 +100,9 @@ document.addEventListener('DOMContentLoaded', function () {
         fs.writeFileSync(nwDir + "option.json", JSON.stringify(this.$root.options));
       }
 
-      //引数ファイル処理　todo
-      var arg = nw.App.argv;
-
+      //引数ファイル処理
+      let arg = nw.App.argv;
+      if (arg.length) this.openArgFile(arg);
     },
     methods: {
       openFile: async function (e) {
@@ -118,7 +119,19 @@ document.addEventListener('DOMContentLoaded', function () {
           return me.getFileArr(file, tabObject);
         }));
 
-        //エラーを削除
+        this.showFile(tabObject);
+      },
+      openArgFile: async function(arg){
+        let me = this;
+        let tabObject = [];
+        await Promise.all(arg.map(function(f){
+          return me.getFileArr({path: f, name:path.basename(f)}, tabObject, true);
+        }));
+        me.showFile(tabObject);
+      },
+      showFile: async function(tabObject){
+        let me = this;
+
         //ファイルテキストをオブジェクト化
         await Promise.all(tabObject.map(async function (o, index) {
           switch (o.type) {
@@ -203,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //変換後の配列をタブリストに投入
         this.tabLeft.list = this.tabLeft.list.concat(tabObject);
       },
-      getFileArr: async function (file, o) {
+      getFileArr: async function (file, o, isFs) {
         let me = this;
         //ファイルタイプの判定
         let f = [],
@@ -211,17 +224,17 @@ document.addEventListener('DOMContentLoaded', function () {
           detail = '';
         switch (file.name.slice(-4).toUpperCase()) {
           case '.XML': //AIS・MSDSplus・IEC62474判定
-            f = await this.readFile(file);
+            f = isFs? fs.readFileSync(file.path, { encoding: 'utf8' }) : await this.readFile(file);
             type = 'XML';
             break;
           case '.CSV': //文字コード
-            f = await this.readFile(file, 'shift_jis');
+            f = isFs? me.readFileSync_encoding(file.path, 'Shift_JIS') :await this.readFile(file, 'shift_jis');
             type = 'JAMA';
             detail = 'tree';
             break;
           case 'SHAI': //ZIP
           case 'SHCI': //ZIP
-            f = await this.readFile(file, null, true);
+            f = await this.readFile(file, null, true, isFs);
             type = 'IEC62474';
             detail = 'table';
             break;
@@ -290,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         return;
       },
-      readFile: async function (file, encode, isZip) {
+      readFile: async function (file, encode, isZip, isFs) {
         const me = this;
         const awaitForLoad = function (target) {
           return new Promise(function (resolve) {
@@ -304,9 +317,14 @@ document.addEventListener('DOMContentLoaded', function () {
         encode = encode ? encode : 'utf8';
         if (isZip) {
           try {
-            reader.readAsArrayBuffer(file);
-            let res = await awaitForLoad(reader);
-            let zipArr = new Uint8Array(res.target.result);
+            let zipArr
+            if (isFs){
+              zipArr = new Uint8Array(fs.readFileSync(file.path));
+            }else{
+              reader.readAsArrayBuffer(file);
+              let res = await awaitForLoad(reader);
+              zipArr = new Uint8Array(res.target.result);
+            }
             let unzip = new Zlib.Unzip(zipArr);
             let res2 = [];
             unzip.getFilenames().map(function (zipf) {
@@ -472,6 +490,10 @@ document.addEventListener('DOMContentLoaded', function () {
         closeNB();
         JamaXML[JamaXML.length] = '</JAMA>';
         return JamaXML.join("\n");
+      },
+      readFileSync_encoding: function(filename, encoding) {
+        var content = fs.readFileSync(filename);
+        return iconvlite.decode(content, encoding);
       }
     }
   });

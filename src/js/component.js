@@ -190,8 +190,7 @@ Vue.component('HelpDlg', {
             SREC-Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.7.0.0
           </div>
         </div>
-<pre>
-Copyright 2010 - 2019 FrogHand (Satoshi Tajima)
+<pre>Copyright 2010 - 2019 FrogHand (Satoshi Tajima)
 <a href="http://opensource.org/licenses/mit-license.php">Released under the MIT license</a>
 Mail      <a href="mailto:froghand0104@gmail.com">froghand0104@gmail.com</a>
 Blog      <a href="http://froghand0104.blogspot.com" target="_blank">http://froghand0104.blogspot.com</a>
