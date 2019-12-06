@@ -23,8 +23,6 @@ String.prototype.repeat = function (n) {
   return ret;
 };
 
-//Vue.config.productionTip = true;
-
 var fs = require('fs');
 var path = require('path');
 var nw = require('nw.gui');
