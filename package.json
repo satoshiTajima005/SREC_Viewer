@@ -13,7 +13,8 @@
   },
   "scripts": {
     "dev": "nw src/",
-    "prod": "nwbuild --platforms win32,win64,linux64 --version 0.42.6 --flavor normal --buildDir dist/ src/"
+    "prod": "nwbuild --platforms win32,win64,linux64 --version 0.42.6 --flavor normal --buildDir dist/ src/",
+    "prod-sdk": "nwbuild --platforms win32,win64,linux64 --version 0.42.6 --flavor sdk --buildDir sdk/ src/"
   },
   "main": "index.js",
   "license": "MIT",

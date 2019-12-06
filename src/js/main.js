@@ -31,10 +31,8 @@ var nw = require('nw.gui');
 var iconvlite = require('iconv-lite');
 const nwDir = path.dirname(process.execPath) + path.sep;
 
-let app;
-
 document.addEventListener('DOMContentLoaded', function () {
-  app = new Vue({
+  new Vue({
     el: "#app",
     data: {
       id: 0, //ファイルID
@@ -87,16 +85,13 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     mounted :function(){
       //optionsをローカルファイルから取得
-      //let opt = Cookies.get('opt');
       let opt;
       try {
         opt = fs.readFileSync(nwDir + "option.json", { encoding: "utf-8" });
       }catch(e){}
-
       if (opt) {
         this.options = JSON.parse(opt);
       }else{
-        //Cookies.set('opt', JSON.stringify(this.$root.options), { expires: 365 });
         fs.writeFileSync(nwDir + "option.json", JSON.stringify(this.$root.options));
       }
 
@@ -224,11 +219,11 @@ document.addEventListener('DOMContentLoaded', function () {
           detail = '';
         switch (file.name.slice(-4).toUpperCase()) {
           case '.XML': //AIS・MSDSplus・IEC62474判定
-            f = isFs? fs.readFileSync(file.path, { encoding: 'utf8' }) : await this.readFile(file);
+            f = isFs? [fs.readFileSync(file.path, { encoding: 'utf8' })] : await this.readFile(file);
             type = 'XML';
             break;
           case '.CSV': //文字コード
-            f = isFs? me.readFileSync_encoding(file.path, 'Shift_JIS') :await this.readFile(file, 'shift_jis');
+            f = isFs? [me.readFileSync_encoding(file.path, 'Shift_JIS')] :await this.readFile(file, 'shift_jis');
             type = 'JAMA';
             detail = 'tree';
             break;
