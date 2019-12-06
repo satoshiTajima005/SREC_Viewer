@@ -16,10 +16,8 @@ String.prototype.xmlEncode = function () {
 注意事項：無し
 *********************************************************************************************************************************/
 String.prototype.repeat = function (n) {
-  let ret = "",
-    str = this;
-  for (; n > 0; n >>>= 1, str += str)
-    if (n & 1) ret += str;
+  let ret = "", str = this;
+  for (; n > 0; n >>>= 1, str += str) if (n & 1) ret += str;
   return ret;
 };
 
