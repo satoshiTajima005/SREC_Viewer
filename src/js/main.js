@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
       isShowOption: false, 
       isShowHelp: false,
       isShowDroper: false,
+      scale:1,
+      scaleTxt: 'zoom:'+ this.scale +';',
       options:{
         AIS1:true,
         AIS2:true,
@@ -97,6 +99,18 @@ document.addEventListener('DOMContentLoaded', function () {
       if (arg.length) this.openArgFile(arg);
     },
     methods: {
+      scaleUp: function(){
+        this.scale =  this.scale * 0.8;
+        this.scaleTxt = 'zoom:'+ this.scale +';';
+      },
+      scaleEqual: function(){
+        this.scale =  1;
+        this.scaleTxt = 'zoom:'+ this.scale +';';
+      },
+      scaleDown: function(){
+        this.scale =  this.scale * 1.2;
+        this.scaleTxt = 'zoom:'+ this.scale +';';
+      },
       dragover: function(e){
         let isFiles = e.dataTransfer.types.filter(item => item=='Files').length;
         if (isFiles) this.isShowDroper = true;

@@ -20,7 +20,7 @@
 
 <body>
   <div id="app">
-    <div class="dropstarter" @dragover.prevent="dragover">
+    <div class="dropstarter" @dragover.prevent="dragover" :style="scaleTxt">
       <div class="header columns">
         <div class="column is-narrow">
           <img src="css/logo.png">
@@ -42,6 +42,9 @@
           <button type="button" class="button is-green" :class="{'is-light': langType!=='en'}" @click="langType='en'" disabled>English</button>
           <button type="button" class="button is-green" :class="{'is-light': langType!=='zh'}" @click="langType='zh'" disabled>Chinese</button>
           -->
+          <button type="button" class="button is-green" title="縮小" @click="scaleUp"><i class="fas fa-angle-double-left"></i></button>
+          <button type="button" class="button is-green" title="100%" @click="scaleEqual"><i class="fas fa-equals"></i></button>
+          <button type="button" class="button is-green" title="拡大" @click="scaleDown"><i class="fas fa-angle-double-right"></i></button>
         </div>
         <div class="column is-narrow">
           <button type="button" class="button is-green" @click="isShowOption=true">
