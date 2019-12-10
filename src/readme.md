@@ -1,4 +1,4 @@
-﻿### 基本情報
+### 基本情報
 
 - ツール名: SREC_Viewer(Substances Reports of Environmental Concern Viewer)
 - バージョン: 7.0.0
