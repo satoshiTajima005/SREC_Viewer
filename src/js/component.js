@@ -187,16 +187,17 @@ Vue.component('HelpDlg', {
             <img src="css/logo_48.png"/>
           </div>
           <div class="column">
-            SREC-Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.7.0.0
+            SREC-Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.7.0.1
           </div>
         </div>
-<pre>Copyright 2010 - 2019 FrogHand (Satoshi Tajima)
+<pre>
+Copyright 2010 - 2019 Satoshi Tajima
 <a href="http://opensource.org/licenses/mit-license.php">Released under the MIT license</a>
 Mail      <a href="mailto:froghand0104@gmail.com">froghand0104@gmail.com</a>
 Blog      <a href="http://froghand0104.blogspot.com" target="_blank">http://froghand0104.blogspot.com</a>
-GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="_blank">https://github.com/satoshiTajima005/SREC-Viewer-Web</a>
+GitHub    <a href="https://github.com/satoshiTajima005/SREC_Viewer" target="_blank">https://github.com/satoshiTajima005/SREC_Viewer</a>
 </pre>【使用方法など】
-<pre style="height:200px;overflow:auto;display:block;border:1px solid #666;background:#fff;padding:10px">
+<pre class="helpPre">
 電気・電子・自動車業界で、環境情報伝達に一般的に使用されている
 ・JAMP-AIS [*.xml]
 ・JAMP-MSDSPlus [*.xml]
@@ -206,14 +207,18 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
 の各ファイルのビューワです。
 
 ・ウィンドウへのファイルドロップにも対応しています
+・ファイル関連付けを行いたい方は、<a href="https://froghand0104.blogspot.com/p/blog-page.html" target="_blank">ダウンロード版</a>をご使用ください。
 ・多言語化は・・・ご要望が多ければやろうかな
 
+※環境情報は機密事項を含むので、オプション機能とアクセス解析を除くすべての機能は
+　クライアント側で処理しており、サーバーに表示したファイル内容が
+　送信されることはありません。
 ※JGPSSIの表示機能に関しては、実務上ほぼ使われなくなったので、
 　大幅改定を機に削除しました。
-
 問題がありましたらメールかブログコメントで連絡をいただけると助かります。
-</pre> 【著作権情報】
-<pre style="height:100px;overflow:auto;display:block;border:1px solid #666;background:#fff;padding:10px">
+</pre>【著作権情報ほか】
+<pre class="helpPre">
+【著作権】
 ---AIS/MSDSplus表示機能に関して---
   本ツールはECALGA環境辞書を複写/引用しています。
   ECALGA環境辞書の著作権はJEITA ECセンターにあります。
@@ -226,7 +231,11 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC-Viewer-Web" target="
  ==SpyGlass icon==
   Creator : VistaICO Toolbar Icons
   Website : <a href="http://www.vistaico.com/contact.htm">http://www.vistaico.com/contact.htm</a>
-  Copyright (C) VistaICO.com</pre>
+  Copyright (C) VistaICO.com
+
+【免責事項】
+・当ツールを使用したことによって生じた損害については一切の責任を負いません。
+</pre>
       </section>
     </div>
   </div>
