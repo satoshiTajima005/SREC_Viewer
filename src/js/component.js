@@ -187,11 +187,11 @@ Vue.component('HelpDlg', {
             <img src="css/logo_48.png"/>
           </div>
           <div class="column">
-            SREC-Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.7.0.1
+            SREC-Viewer<br/>(Substances Reports of Environmental Concern Viewer)<br/>環境負荷物質報告書ビューア Ver.7.1.0
           </div>
         </div>
 <pre>
-Copyright 2010 - 2019 Satoshi Tajima
+Copyright 2010 - 2021 Satoshi Tajima
 <a href="http://opensource.org/licenses/mit-license.php">Released under the MIT license</a>
 Mail      <a href="mailto:froghand0104@gmail.com">froghand0104@gmail.com</a>
 Blog      <a href="http://froghand0104.blogspot.com" target="_blank">http://froghand0104.blogspot.com</a>
