@@ -204,17 +204,15 @@ GitHub    <a href="https://github.com/satoshiTajima005/SREC_Viewer" target="_bla
 ・chemSHRPA(AI/CI) [*.shai, *.shci, *.xml]
 ・IEC62474 [*.xml]
 ・JAMA/JAPIA統一データシート [*.csv]
-の各ファイルのビューワです。
+の各ファイルのビューワ(閲覧ツール)です。
 
 ・ウィンドウへのファイルドロップにも対応しています
 ・ファイル関連付けを行いたい方は、<a href="https://froghand0104.blogspot.com/p/blog-page.html" target="_blank">ダウンロード版</a>をご使用ください。
 ・多言語化は・・・ご要望が多ければやろうかな
 
-※環境情報は機密事項を含むので、オプション機能とアクセス解析を除くすべての機能は
-　クライアント側で処理しており、サーバーに表示したファイル内容が
-　送信されることはありません。
 ※JGPSSIの表示機能に関しては、実務上ほぼ使われなくなったので、
 　大幅改定を機に削除しました。
+
 問題がありましたらメールかブログコメントで連絡をいただけると助かります。
 </pre>【著作権情報ほか】
 <pre class="helpPre">

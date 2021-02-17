@@ -82,6 +82,15 @@ body {
   border-bottom: none;
 }
 
+.helpPre {
+  height: 200px;
+  overflow: auto;
+  display: block;
+  border: 1px solid #666;
+  background: #fff;
+  padding: 10px
+}
+
 .tabname {
   max-width: 80px;
   overflow: hidden;

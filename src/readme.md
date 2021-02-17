@@ -1,9 +1,9 @@
 ### 基本情報
 
 - ツール名: SREC_Viewer(Substances Reports of Environmental Concern Viewer)
-- バージョン: 7.0.1
+- バージョン: 7.1.0
 - 著作権者: FrogHand (Satoshi Tajima)
-- 改訂日: 2019/12/18
+- 改訂日: 2021/02/17
 - 連絡先
   - Blog: http://froghand0104.blogspot.com/
   - Mail: froghand0104@gmail.com
